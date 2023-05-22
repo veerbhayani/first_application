@@ -99,6 +99,27 @@ class ButtonDemo extends StatelessWidget {
                 Icons.wallet,
               ),
             ),
+            const SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                print('Hi i am OnTap Event');
+              },
+              onDoubleTap: () {
+                print('Hi i am OnDoubleTap Event');
+              },
+              onLongPress: () {
+                print('Hi i am LongPress Event');
+              },
+              child: Container(
+                height: 100,
+                width: 100,
+                color: Colors.blue[300],
+                alignment: Alignment.center,
+                child: const Text('Viraj Bhayani'),
+              ),
+            ),
           ],
         ),
       ),
