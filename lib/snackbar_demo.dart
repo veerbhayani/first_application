@@ -8,16 +8,15 @@ class SnackBarDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            TextButton(
-              onPressed: () {
-                print('Click me');
-              },
-              child: const Text('Show SnackBar'),
-            ),
-          ],
+        child: TextButton(
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('Hello i am SnackBar'),
+              ),
+            );
+          },
+          child: const Text('Show SnackBar'),
         ),
       ),
     );
