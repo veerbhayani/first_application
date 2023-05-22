@@ -72,10 +72,32 @@ class ButtonDemo extends StatelessWidget {
               onPressed: () {
                 print('Hi i am Floating Action Button');
               },
-              label: const Text('Floating Action Button.Extended'),
+              label: const Text('Viraj Bhayani'),
+              icon: const Icon(
+                Icons.hotel,
+              ),
             ),
             const SizedBox(
-              height: 10,
+              height: 20,
+            ),
+            FloatingActionButton.large(
+              onPressed: () {
+                print('Hi i am Floating Action Button.large');
+              },
+              child: const Icon(
+                Icons.phone,
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            FloatingActionButton.small(
+              onPressed: () {
+                print('Hi i am Floating Action Button.small');
+              },
+              child: const Icon(
+                Icons.wallet,
+              ),
             ),
           ],
         ),
