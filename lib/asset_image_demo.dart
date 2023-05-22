@@ -5,6 +5,20 @@ class AssetImageDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: Center(
+        child: Container(
+          height: 250,
+          width: 200,
+          decoration: BoxDecoration(
+            color: Colors.blue[200],
+            image: const DecorationImage(
+              image: AssetImage('assets/images/profile.jpeg'),
+              fit: BoxFit.fill,
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
