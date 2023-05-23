@@ -1,9 +1,7 @@
-// ignore_for_file: file_names
-
 import 'package:flutter/material.dart';
 
-class GmailUi extends StatelessWidget {
-  const GmailUi({super.key});
+class YoutubeUi extends StatelessWidget {
+  const YoutubeUi({super.key});
 
   @override
   Widget build(BuildContext context) {
