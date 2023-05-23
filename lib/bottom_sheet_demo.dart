@@ -18,7 +18,7 @@ class BottomSheetDemo extends StatelessWidget {
                 width: 300,
                 decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(10),
+                    topLeft: Radius.circular(200),
                   ),
                 ),
                 child: const Column(
