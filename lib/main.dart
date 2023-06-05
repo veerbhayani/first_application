@@ -1,4 +1,4 @@
-import 'package:first_application/youtube_ui.dart';
+import 'package:first_application/list_of_map_demo/whatsapp_demo.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(useMaterial3: false),
       debugShowCheckedModeBanner: false,
-      home: const YoutubeUi(),
+      home: const WhatsappDemo(),
     );
   }
 }
