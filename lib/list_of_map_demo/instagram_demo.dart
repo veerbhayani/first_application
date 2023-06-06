@@ -37,37 +37,38 @@ class InstagramuiDemo extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(
-            height: 10,
-          ),
           Expanded(
             child: SingleChildScrollView(
               child: Column(
                 children: [
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: List.generate(
-                        instgramStoryDetails.length,
-                        (index) => Column(
-                          children: [
-                            Column(
-                              children: [
-                                CircleAvatar(
-                                  radius: 30,
-                                  backgroundImage: NetworkImage(
-                                    instgramStoryDetails[index]['profileImage'],
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: List.generate(
+                          instgramStoryDetails.length,
+                          (index) => Column(
+                            children: [
+                              Column(
+                                children: [
+                                  CircleAvatar(
+                                    radius: 30,
+                                    backgroundImage: NetworkImage(
+                                      instgramStoryDetails[index]
+                                          ['profileImage'],
+                                    ),
                                   ),
-                                ),
-                                Text(
-                                  instgramStoryDetails[index]['username'],
-                                ),
-                              ],
-                            ),
-                            const SizedBox(
-                              width: 110,
-                            ),
-                          ],
+                                  Text(
+                                    instgramStoryDetails[index]['username'],
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(
+                                width: 110,
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
