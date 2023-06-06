@@ -105,3 +105,116 @@ final List<Map<String, dynamic>> studentsDetails = [
     'messege': 'Hi there ! i am using whatsapp.'
   },
 ];
+
+final List<Map<String, dynamic>> instagramDetails = [
+  {
+    'profileImage':
+        'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'feedImage':
+        'https://images.unsplash.com/photo-1685900337313-64cd27f0238e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'likeDetails': 'Liked by chintan_126 and 100k others',
+    'commentDetails': 'View all 10k comments',
+    'postUploadTime': '19 weeks ago',
+    'name': 'hindu_veer_bhayani',
+  },
+  {
+    'profileImage':
+        'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'feedImage':
+        'https://images.unsplash.com/photo-1685900337313-64cd27f0238e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'likeDetails': 'Liked by chintan_126 and 100k others',
+    'commentDetails': 'View all 10k comments',
+    'postUploadTime': '19 weeks ago',
+    'name': 'ansh_chaniyara',
+  },
+  {
+    'profileImage':
+        'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'feedImage':
+        'https://images.unsplash.com/photo-1685900337313-64cd27f0238e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'likeDetails': 'Liked by chintan_126 and 100k others',
+    'commentDetails': 'View all 10k comments',
+    'postUploadTime': '19 weeks ago',
+    'name': 'mintan_lathiya',
+  },
+  {
+    'profileImage':
+        'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'feedImage':
+        'https://images.unsplash.com/photo-1685900337313-64cd27f0238e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'likeDetails': 'Liked by chintan_126 and 100k others',
+    'commentDetails': 'View all 10k comments',
+    'postUploadTime': '19 weeks ago',
+    'name': 'vishal_mavani',
+  },
+  {
+    'profileImage':
+        'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'feedImage':
+        'https://images.unsplash.com/photo-1685900337313-64cd27f0238e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'likeDetails': 'Liked by chintan_126 and 100k others',
+    'commentDetails': 'View all 10k comments',
+    'postUploadTime': '19 weeks ago',
+    'name': 'hardik_suvagiya',
+  },
+  {
+    'profileImage':
+        'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'feedImage':
+        'https://images.unsplash.com/photo-1685900337313-64cd27f0238e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'likeDetails': 'Liked by chintan_126 and 100k others',
+    'commentDetails': 'View all 10k comments',
+    'postUploadTime': '19 weeks ago',
+    'name': 'rohit_vyas',
+  },
+  {
+    'profileImage':
+        'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'feedImage':
+        'https://images.unsplash.com/photo-1685900337313-64cd27f0238e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'likeDetails': 'Liked by chintan_126 and 100k others',
+    'commentDetails': 'View all 10k comments',
+    'postUploadTime': '19 weeks ago',
+    'name': 'codifly_infotech',
+  },
+  {
+    'profileImage':
+        'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'feedImage':
+        'https://images.unsplash.com/photo-1685900337313-64cd27f0238e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'likeDetails': 'Liked by chintan_126 and 100k others',
+    'commentDetails': 'View all 10k comments',
+    'postUploadTime': '19 weeks ago',
+    'name': 'hardik_mavani',
+  },
+  {
+    'profileImage':
+        'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'feedImage':
+        'https://images.unsplash.com/photo-1685900337313-64cd27f0238e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'likeDetails': 'Liked by chintan_126 and 100k others',
+    'commentDetails': 'View all 10k comments',
+    'postUploadTime': '19 weeks ago',
+    'name': 'chirag_lathiya',
+  },
+  {
+    'profileImage':
+        'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'feedImage':
+        'https://images.unsplash.com/photo-1685900337313-64cd27f0238e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'likeDetails': 'Liked by chintan_126 and 100k others',
+    'commentDetails': 'View all 10k comments',
+    'postUploadTime': '19 weeks ago',
+    'name': 'bajarang_dal',
+  },
+  {
+    'profileImage':
+        'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'feedImage':
+        'https://images.unsplash.com/photo-1685900337313-64cd27f0238e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
+    'likeDetails': 'Liked by chintan_126 and 100k others',
+    'commentDetails': 'View all 10k comments',
+    'postUploadTime': '19 weeks ago',
+    'name': 'suraties',
+  },
+];

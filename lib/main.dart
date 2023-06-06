@@ -1,5 +1,6 @@
-import 'package:first_application/list_of_map_demo/whatsapp_demo.dart';
 import 'package:flutter/material.dart';
+
+import 'list_of_map_demo/instagram_demo.dart';
 
 void main() {
   runApp(
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(useMaterial3: false),
       debugShowCheckedModeBanner: false,
-      home: const WhatsappDemo(),
+      home: const InstagramuiDemo(),
     );
   }
 }
