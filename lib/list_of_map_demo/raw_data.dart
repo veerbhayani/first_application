@@ -1,6 +1,9 @@
 // **************** Whatsapp Details ******************
 
-final List<Map<String, dynamic>> studentsDetails = [
+import 'package:first_application/list_of_map_demo/user.model.dart';
+import 'package:first_application/list_of_map_demo/whatsapp.model.dart';
+
+final List<Map<String, dynamic>> whatsappDetails = [
   {
     'image':
         'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
@@ -107,6 +110,8 @@ final List<Map<String, dynamic>> studentsDetails = [
     'messege': 'Hi there ! i am using whatsapp.'
   },
 ];
+
+List<Whatsapp> whatsappData = [];
 
 // **************** instagram post Details ******************
 
@@ -327,3 +332,5 @@ final List<Map<String, dynamic>> userDetails = [
     'emailId': 'savaliyaharshant@gmail.com',
   }
 ];
+
+List<User> userData = [];

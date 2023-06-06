@@ -1,11 +1,17 @@
 import 'package:first_application/list_of_map_demo/raw_data.dart';
+import 'package:first_application/list_of_map_demo/whatsapp.model.dart';
 import 'package:flutter/material.dart';
 
-class WhatsappDemo extends StatelessWidget {
-  const WhatsappDemo({super.key});
+class WhatsappDemo2 extends StatelessWidget {
+  const WhatsappDemo2({super.key});
 
   @override
   Widget build(BuildContext context) {
+    for (var element in whatsappDetails) {
+      whatsappData.add(
+        Whatsapp.fromJson(element),
+      );
+    }
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xFF128C7E),
@@ -84,21 +90,21 @@ class WhatsappDemo extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: List.generate(
-            whatsappDetails.length,
+            whatsappData.length,
             (index) => ListTile(
               title: Text(
-                whatsappDetails[index]['name'],
+                whatsappData[index].name!,
               ),
               subtitle: Text(
-                whatsappDetails[index]['messege'],
+                whatsappData[index].messege!,
               ),
               trailing: Text(
-                whatsappDetails[index]['time'],
+                whatsappData[index].time!,
               ),
               leading: CircleAvatar(
                 backgroundColor: const Color(0xFF128C7E),
                 backgroundImage: NetworkImage(
-                  whatsappDetails[index]['image'],
+                  whatsappData[index].image!,
                 ),
               ),
             ),
