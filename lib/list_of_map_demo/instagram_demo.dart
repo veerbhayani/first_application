@@ -60,7 +60,7 @@ class InstagramuiDemo extends StatelessWidget {
                                     ),
                                   ),
                                   Text(
-                                    instgramStoryDetails[index]['username'],
+                                    instgramStoryDetails[index]['userName'],
                                   ),
                                 ],
                               ),

@@ -1,3 +1,5 @@
+// **************** Whatsapp Details ******************
+
 final List<Map<String, dynamic>> studentsDetails = [
   {
     'image':
@@ -225,58 +227,103 @@ final List<Map<String, dynamic>> instagramPostDetails = [
 
 final List<Map<String, dynamic>> instgramStoryDetails = [
   {
-    'username': 'hindu_veer_bhayani',
+    'userName': 'hindu_veer_bhayani',
     'profileImage':
         'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
   },
   {
-    'username': 'ansh_chaniyara',
+    'userName': 'ansh_chaniyara',
     'profileImage':
         'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
   },
   {
-    'username': 'vishal_mavani',
+    'userName': 'vishal_mavani',
     'profileImage':
         'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
   },
   {
-    'username': 'hardik_suvagiya',
+    'userName': 'hardik_suvagiya',
     'profileImage':
         'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
   },
   {
-    'username': 'mintan_lathiya',
+    'userName': 'mintan_lathiya',
     'profileImage':
         'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
   },
   {
-    'username': 'rohit_vyas',
+    'userName': 'rohit_vyas',
     'profileImage':
         'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
   },
   {
-    'username': 'codifly_infotech',
+    'userName': 'codifly_infotech',
     'profileImage':
         'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
   },
   {
-    'username': 'rigal_classes',
+    'userName': 'rigal_classes',
     'profileImage':
         'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
   },
   {
-    'username': 'savan_koshiya',
+    'userName': 'savan_koshiya',
     'profileImage':
         'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
   },
   {
-    'username': 'adah_ki_adah',
+    'userName': 'adah_ki_adah',
     'profileImage':
         'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
   },
   {
-    'username': 'bajarang_dal',
+    'userName': 'bajarang_dal',
     'profileImage':
         'https://images.unsplash.com/photo-1685871286419-58e4fc0de8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60',
   },
+];
+
+// **************** User Details *****************
+
+final List<Map<String, dynamic>> userDetails = [
+  {
+    'userName': 'veerbhayani',
+    'emailId': 'virbhayani137@gmail.com',
+  },
+  {
+    'userName': 'mintanlathiya',
+    'emailId': 'mintanlathiya@gmail.com',
+  },
+  {
+    'userName': 'vishalmavani',
+    'emailId': 'vishalmavani@gmail.com',
+  },
+  {
+    'userName': 'hardiksuvagiya',
+    'emailId': 'hardiksuvagiya@gmail.com',
+  },
+  {
+    'userName': 'anshchaniyara',
+    'emailId': 'anshuchaniyara@gmail.com',
+  },
+  {
+    'userName': 'nileshvasani',
+    'emailId': 'nileshvasani@gmail.com',
+  },
+  {
+    'userName': 'satishbhalala',
+    'emailId': 'satishbhalala@gmail.com',
+  },
+  {
+    'userName': 'msdhoni',
+    'emailId': 'msdhoni1@gmail.com',
+  },
+  {
+    'userName': 'harshilbhuva',
+    'emailId': 'bhuvaharshil@gmail.com',
+  },
+  {
+    'userName': 'harshantsavaliya',
+    'emailId': 'savaliyaharshant@gmail.com',
+  }
 ];
