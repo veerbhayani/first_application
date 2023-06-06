@@ -48,7 +48,7 @@ class InstagramuiDemo extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       children: List.generate(
-                        instagramDetails.length,
+                        instgramStoryDetails.length,
                         (index) => Column(
                           children: [
                             Column(
@@ -56,11 +56,11 @@ class InstagramuiDemo extends StatelessWidget {
                                 CircleAvatar(
                                   radius: 30,
                                   backgroundImage: NetworkImage(
-                                    instagramDetails[index]['profileImage'],
+                                    instgramStoryDetails[index]['profileImage'],
                                   ),
                                 ),
                                 Text(
-                                  instagramDetails[index]['name'],
+                                  instgramStoryDetails[index]['username'],
                                 ),
                               ],
                             ),
@@ -74,7 +74,7 @@ class InstagramuiDemo extends StatelessWidget {
                   ),
                   Column(
                     children: List.generate(
-                      instagramDetails.length,
+                      instagramPostDetails.length,
                       (index) => Column(
                         children: [
                           Padding(
@@ -83,7 +83,7 @@ class InstagramuiDemo extends StatelessWidget {
                               children: [
                                 CircleAvatar(
                                   backgroundImage: NetworkImage(
-                                    instagramDetails[index]['profileImage'],
+                                    instagramPostDetails[index]['profileImage'],
                                   ),
                                 ),
                                 const SizedBox(
@@ -92,7 +92,7 @@ class InstagramuiDemo extends StatelessWidget {
                                 Expanded(
                                   flex: 7,
                                   child: Text(
-                                    instagramDetails[index]['name'],
+                                    instagramPostDetails[index]['name'],
                                     style: const TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.bold,
@@ -111,7 +111,7 @@ class InstagramuiDemo extends StatelessWidget {
                           ),
                           Image(
                             image: NetworkImage(
-                              instagramDetails[index]['feedImage'],
+                              instagramPostDetails[index]['feedImage'],
                             ),
                           ),
                           const SizedBox(
@@ -159,7 +159,7 @@ class InstagramuiDemo extends StatelessWidget {
                                 width: 10,
                               ),
                               Text(
-                                instagramDetails[index]['likeDetails'],
+                                instagramPostDetails[index]['likeDetails'],
                                 style: const TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
@@ -176,7 +176,7 @@ class InstagramuiDemo extends StatelessWidget {
                                 width: 10,
                               ),
                               Text(
-                                instagramDetails[index]['commentDetails'],
+                                instagramPostDetails[index]['commentDetails'],
                                 style: const TextStyle(fontSize: 15),
                               ),
                             ],
@@ -190,7 +190,7 @@ class InstagramuiDemo extends StatelessWidget {
                                 width: 10,
                               ),
                               Text(
-                                instagramDetails[index]['postUploadTime'],
+                                instagramPostDetails[index]['postUploadTime'],
                                 style: const TextStyle(fontSize: 15),
                               ),
                             ],
