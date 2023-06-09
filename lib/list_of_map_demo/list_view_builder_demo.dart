@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class ListViewBuilderDemo extends StatelessWidget {
@@ -31,6 +32,15 @@ class ListViewBuilderDemo extends StatelessWidget {
                 ],
               ),
               itemCount: myFriends.length,
+              clipBehavior: Clip.hardEdge,
+              dragStartBehavior: DragStartBehavior.down,
+              keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.manual,
+              padding: const EdgeInsets.all(10.0),
+              physics: const BouncingScrollPhysics(),
+              primary: true,
+              reverse: true,
+              scrollDirection: Axis.vertical,
+              shrinkWrap: true,
             ),
           ),
         ],
@@ -38,3 +48,14 @@ class ListViewBuilderDemo extends StatelessWidget {
     );
   }
 }
+
+
+//               clipBehavior: ,
+//               dragStartBehavior: , 
+//               keyboardDismissBehavior: , 
+//               padding: ,
+//               physics: , 
+//               primary: , 
+//               reverse: , 
+//               scrollDirection: , 
+//               shrinkWrap: , 
