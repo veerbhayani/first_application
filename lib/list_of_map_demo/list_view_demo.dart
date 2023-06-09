@@ -8,6 +8,8 @@ class ListViewDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
+        scrollDirection: Axis.vertical,
+
         // Determines the way that drag start behavior is handled.
         dragStartBehavior: DragStartBehavior.down,
 
