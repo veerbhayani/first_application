@@ -2,6 +2,7 @@
 
 import 'package:first_application/list_of_map_demo/user.model.dart';
 import 'package:first_application/list_of_map_demo/whatsapp.model.dart';
+import 'package:flutter/material.dart';
 
 final List<Map<String, dynamic>> whatsappDetails = [
   {
@@ -334,3 +335,69 @@ final List<Map<String, dynamic>> userDetails = [
 ];
 
 List<User> userData = [];
+
+// ************** List of myFriends  ************** //
+final List<String> myFriends = [
+  'ansh',
+  'mintan',
+  'vishal',
+  'savan',
+  'yash',
+  'hardik',
+  'vivek',
+  'vimal',
+  'sahil',
+  'axay'
+];
+
+//**************** List of map of gridData ********************* //
+List<Map<String, dynamic>> gridData = [
+  {
+    'icon': Icons.abc,
+    'name': 'ABC',
+  },
+  {
+    'icon': Icons.person,
+    'name': 'Person',
+  },
+  {
+    'icon': Icons.account_balance,
+    'name': 'account_balance',
+  },
+  {
+    'icon': Icons.money,
+    'name': 'money',
+  },
+  {
+    'icon': Icons.add,
+    'name': 'add',
+  },
+  {
+    'icon': Icons.person,
+    'name': 'person',
+  },
+  {
+    'icon': Icons.wifi,
+    'name': 'wifi',
+  },
+  {
+    'icon': Icons.airplane_ticket,
+    'name': 'airplane_ticket',
+  },
+  {
+    'icon': Icons.menu,
+    'name': 'menu',
+  },
+  {
+    'icon': Icons.book,
+    'name': 'book',
+  },
+  {
+    'icon': Icons.bike_scooter,
+    'name': 'bike_scooter',
+  },
+  {
+    'icon': Icons.bus_alert,
+    'name': 'bus_alert',
+  },
+];
