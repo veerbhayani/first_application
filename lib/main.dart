@@ -1,5 +1,6 @@
-import 'package:first_application/list_of_map_demo/list_view_custom_demo.dart';
 import 'package:flutter/material.dart';
+
+import 'list_of_map_demo/grid_view_count_demo.dart';
 
 void main() {
   runApp(
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(useMaterial3: false),
       debugShowCheckedModeBanner: false,
-      home: ListViewCustomDemo(),
+      home: const GridViewCountDemo(),
     );
   }
 }
