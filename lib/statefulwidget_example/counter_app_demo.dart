@@ -17,13 +17,16 @@ class _CounterAppDemoState extends State<CounterAppDemo> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              FloatingActionButton(
-                onPressed: () {
-                  Counter.decrementBy1();
-                  setState(() {});
-                },
-                child: const Icon(
-                  Icons.remove,
+              Visibility(
+                visible: (Counter.count1 > 0) ? true : false,
+                child: FloatingActionButton(
+                  onPressed: () {
+                    Counter.decrementBy1();
+                    setState(() {});
+                  },
+                  child: const Icon(
+                    Icons.remove,
+                  ),
                 ),
               ),
               Text(
@@ -32,15 +35,18 @@ class _CounterAppDemoState extends State<CounterAppDemo> {
                   fontSize: 25,
                 ),
               ),
-              FloatingActionButton(
-                onPressed: () {
-                  Counter.incrementBy1();
-                  setState(() {});
-                },
-                child: const Icon(
-                  Icons.add,
+              Visibility(
+                visible: (Counter.count1 < 50) ? true : false,
+                child: FloatingActionButton(
+                  onPressed: () {
+                    Counter.incrementBy1();
+                    setState(() {});
+                  },
+                  child: const Icon(
+                    Icons.add,
+                  ),
                 ),
-              )
+              ),
             ],
           ),
           const SizedBox(
@@ -49,13 +55,16 @@ class _CounterAppDemoState extends State<CounterAppDemo> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              FloatingActionButton(
-                onPressed: () {
-                  Counter.decrementBy2();
-                  setState(() {});
-                },
-                child: const Icon(
-                  Icons.remove,
+              Visibility(
+                visible: (Counter.count2 > 0) ? true : false,
+                child: FloatingActionButton(
+                  onPressed: () {
+                    Counter.decrementBy2();
+                    setState(() {});
+                  },
+                  child: const Icon(
+                    Icons.remove,
+                  ),
                 ),
               ),
               Text(
@@ -64,15 +73,18 @@ class _CounterAppDemoState extends State<CounterAppDemo> {
                   fontSize: 25,
                 ),
               ),
-              FloatingActionButton(
-                onPressed: () {
-                  Counter.incrementBy2();
-                  setState(() {});
-                },
-                child: const Icon(
-                  Icons.add,
+              Visibility(
+                visible: (Counter.count2 < 50) ? true : false,
+                child: FloatingActionButton(
+                  onPressed: () {
+                    Counter.incrementBy2();
+                    setState(() {});
+                  },
+                  child: const Icon(
+                    Icons.add,
+                  ),
                 ),
-              )
+              ),
             ],
           ),
         ],
