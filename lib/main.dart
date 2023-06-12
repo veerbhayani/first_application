@@ -1,4 +1,4 @@
-import 'package:first_application/list_of_map_demo/grid_view.builder_demo.dart';
+import 'package:first_application/statefulwidget_example/counter_app.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(useMaterial3: false),
       debugShowCheckedModeBanner: false,
-      home: const GridViewBuilderDemo(),
+      home: const CounterApp(),
     );
   }
 }
