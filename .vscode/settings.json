@@ -1,4 +1,5 @@
 {
     "editor.fontFamily": "Cascadia Code PL Extralight",
-    "editor.fontSize": 18
+    "editor.fontSize": 16,
+    "editor.codeLensFontFamily": "Cascadia Code PL Extralight"
 }
