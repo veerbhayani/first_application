@@ -6,8 +6,22 @@ List<Color> containerColors = [
   Colors.blue,
   Colors.yellow,
   Colors.orange,
+  Colors.indigo,
   Colors.purple,
-  Colors.pink,
-  Colors.teal,
   Colors.brown,
+  Colors.pink
 ];
+
+int selectedContainerIndex = 0;
+
+void onTapContainer(int index) {
+  if (selectedContainerIndex == 0) {
+    selectedContainerIndex = index;
+  } else {
+    Color? temp;
+    temp = containerColors[selectedContainerIndex];
+    containerColors[selectedContainerIndex] = containerColors[index];
+    containerColors[index] = temp;
+    selectedContainerIndex = 0;
+  }
+}
