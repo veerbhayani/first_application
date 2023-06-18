@@ -1,4 +1,13 @@
 class OnSubmit {
+  static String enterName = '';
+  static String submittedName = '';
+  static bool isNameSubmited = false;
+  void name() {
+    if (isNameSubmited == true) {
+      enterName = submittedName;
+    }
+  }
+
 //  ********* gender variables *********//
   static String male = 'male';
   static String female = 'female';
@@ -34,6 +43,11 @@ class OnSubmit {
   void onSubmitClear() {
     if (isSubmited == false) {
       selectedHobbies.clear();
+      isCricket = false;
+      isFootball = false;
+      isGaming = false;
+      isBaseball = false;
+      isCooking = false;
     }
   }
 }
