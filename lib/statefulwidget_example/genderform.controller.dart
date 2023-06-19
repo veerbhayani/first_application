@@ -38,6 +38,15 @@ class OnSubmit {
     if (isCooking) {
       selectedHobbies.add('Cooking');
     }
+    if (isSubmited == true) {
+      selectedHobbies.clear();
+      isCricket = false;
+      isFootball = false;
+      isGaming = false;
+      isBaseball = false;
+      isCooking = false;
+      selectedGender = ' ';
+    }
   }
 
   void onSubmitClear() {

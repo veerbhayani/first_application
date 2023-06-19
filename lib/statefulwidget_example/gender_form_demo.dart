@@ -12,7 +12,7 @@ class GenderFormDemoState extends State<GenderFormDemo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: OnSubmit.isSubmited ? Colors.yellow : Colors.white,
+      backgroundColor: OnSubmit.isSubmited ? Colors.black : Colors.white,
       body: Padding(
         padding: const EdgeInsets.all(
           10,
@@ -20,8 +20,8 @@ class GenderFormDemoState extends State<GenderFormDemo> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Padding(
-              padding: EdgeInsets.only(
+            Padding(
+              padding: const EdgeInsets.only(
                 top: 10,
                 bottom: 10,
               ),
@@ -29,6 +29,7 @@ class GenderFormDemoState extends State<GenderFormDemo> {
                 'Gender',
                 style: TextStyle(
                   fontSize: 35,
+                  color: OnSubmit.isSubmited ? Colors.white : Colors.black,
                   fontFamily: 'Dancing Script',
                   fontWeight: FontWeight.w400,
                 ),
@@ -44,6 +45,8 @@ class GenderFormDemoState extends State<GenderFormDemo> {
                     setState(() {});
                   },
                   child: Card(
+                    shadowColor:
+                        OnSubmit.isSubmited ? Colors.white : Colors.black,
                     elevation: OnSubmit.selectedGender == 'male' ? 50 : 0,
                     color: OnSubmit.selectedGender == 'male'
                         ? Colors.blue
@@ -74,7 +77,9 @@ class GenderFormDemoState extends State<GenderFormDemo> {
                     setState(() {});
                   },
                   child: Card(
-                    elevation: OnSubmit.selectedGender == 'female' ? 50 : 0,
+                    shadowColor:
+                        OnSubmit.isSubmited ? Colors.white : Colors.black,
+                    elevation: OnSubmit.selectedGender == 'female' ? 25 : 0,
                     color: OnSubmit.selectedGender == 'female'
                         ? Colors.pink
                         : Colors.white,
@@ -95,14 +100,15 @@ class GenderFormDemoState extends State<GenderFormDemo> {
                 ),
               ],
             ),
-            const Padding(
-              padding: EdgeInsets.only(
+            Padding(
+              padding: const EdgeInsets.only(
                 top: 30,
                 bottom: 20,
               ),
               child: Text(
                 'Hobbies',
                 style: TextStyle(
+                  color: OnSubmit.isSubmited ? Colors.white : Colors.black,
                   fontSize: 35,
                   fontFamily: 'Dancing Script',
                   fontWeight: FontWeight.w400,
@@ -117,6 +123,8 @@ class GenderFormDemoState extends State<GenderFormDemo> {
                     setState(() {});
                   },
                   child: Card(
+                    shadowColor:
+                        OnSubmit.isSubmited ? Colors.white : Colors.black,
                     elevation: OnSubmit.isCricket ? 35 : 0,
                     color: OnSubmit.isCricket ? Colors.blue : Colors.white,
                     child: const SizedBox(
@@ -145,6 +153,8 @@ class GenderFormDemoState extends State<GenderFormDemo> {
                     setState(() {});
                   },
                   child: Card(
+                    shadowColor:
+                        OnSubmit.isSubmited ? Colors.white : Colors.black,
                     elevation: OnSubmit.isFootball ? 35 : 0,
                     color: OnSubmit.isFootball
                         ? Colors.purpleAccent
@@ -175,6 +185,8 @@ class GenderFormDemoState extends State<GenderFormDemo> {
                     setState(() {});
                   },
                   child: Card(
+                    shadowColor:
+                        OnSubmit.isSubmited ? Colors.white : Colors.black,
                     elevation: OnSubmit.isGaming ? 35 : 0,
                     color: OnSubmit.isGaming ? Colors.pink : Colors.white,
                     child: const SizedBox(
@@ -203,6 +215,8 @@ class GenderFormDemoState extends State<GenderFormDemo> {
                     setState(() {});
                   },
                   child: Card(
+                    shadowColor:
+                        OnSubmit.isSubmited ? Colors.white : Colors.black,
                     elevation: OnSubmit.isBaseball ? 35 : 0,
                     color: OnSubmit.isBaseball ? Colors.orange : Colors.white,
                     child: const SizedBox(
@@ -231,6 +245,8 @@ class GenderFormDemoState extends State<GenderFormDemo> {
                     setState(() {});
                   },
                   child: Card(
+                    shadowColor:
+                        OnSubmit.isSubmited ? Colors.white : Colors.black,
                     elevation: OnSubmit.isCooking ? 35 : 0,
                     color: OnSubmit.isCooking ? Colors.green : Colors.white,
                     child: const SizedBox(
@@ -259,17 +275,33 @@ class GenderFormDemoState extends State<GenderFormDemo> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  MaterialButton(
-                    color: OnSubmit.isSubmited ? Colors.blue : Colors.white,
-                    onPressed: () {
-                      OnSubmit().hobbies();
-                      OnSubmit.isSubmited = !OnSubmit.isSubmited;
-                      setState(() {});
-                    },
-                    child: const Text(
-                      'Submit',
-                    ),
-                  ),
+                  (OnSubmit.selectedGender == 'male' ||
+                          OnSubmit.selectedGender == 'female' &&
+                              OnSubmit.isCricket ||
+                          OnSubmit.isFootball ||
+                          OnSubmit.isGaming ||
+                          OnSubmit.isBaseball ||
+                          OnSubmit.isCooking)
+                      ? MaterialButton(
+                          color:
+                              OnSubmit.isSubmited ? Colors.blue : Colors.white,
+                          onPressed: () {
+                            OnSubmit().hobbies();
+                            OnSubmit.isSubmited = !OnSubmit.isSubmited;
+                            setState(() {});
+                          },
+                          child: const Text(
+                            'Submit',
+                          ),
+                        )
+                      : MaterialButton(
+                          color:
+                              OnSubmit.isSubmited ? Colors.blue : Colors.white,
+                          onPressed: () {},
+                          child: const Text(
+                            'Submit',
+                          ),
+                        ),
                 ],
               ),
             ),
@@ -279,13 +311,16 @@ class GenderFormDemoState extends State<GenderFormDemo> {
                   ? Container(
                       padding: const EdgeInsets.all(30),
                       alignment: Alignment.center,
-                      color: Colors.white,
+                      color: OnSubmit.isSubmited ? Colors.black : Colors.white,
                       child: ListView.builder(
                         itemCount: 1,
                         itemBuilder: (context, index) => Text(
                           'Gender is ${OnSubmit.selectedGender}\nHobbies are ${OnSubmit.selectedHobbies}',
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 25,
+                            color: OnSubmit.isSubmited
+                                ? Colors.white
+                                : Colors.black,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
