@@ -276,12 +276,7 @@ class GenderFormDemoState extends State<GenderFormDemo> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   (OnSubmit.selectedGender == 'male' ||
-                          OnSubmit.selectedGender == 'female' &&
-                              OnSubmit.isCricket ||
-                          OnSubmit.isFootball ||
-                          OnSubmit.isGaming ||
-                          OnSubmit.isBaseball ||
-                          OnSubmit.isCooking)
+                          OnSubmit.selectedGender == 'female')
                       ? MaterialButton(
                           color:
                               OnSubmit.isSubmited ? Colors.blue : Colors.white,
