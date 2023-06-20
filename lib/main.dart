@@ -1,4 +1,4 @@
-import 'package:first_application/statefulwidget_example/gender_form_demo.dart';
+import 'package:first_application/button_demo/rto_mcq_demo.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(useMaterial3: false),
       debugShowCheckedModeBanner: false,
-      home: const GenderFormDemo(),
+      home: const RtoMcqDemo(),
     );
   }
 }
