@@ -1,4 +1,4 @@
-import 'package:first_application/button_demo/rto_mcq.controller.dart';
+import 'package:first_application/rto_mcq.controller.dart';
 import 'package:flutter/material.dart';
 
 class RtoMcqDemo extends StatefulWidget {

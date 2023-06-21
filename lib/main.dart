@@ -1,4 +1,4 @@
-import 'package:first_application/button_demo/rto_mcq_demo.dart';
+import 'package:first_application/rto_mcq_demo.dart';
 import 'package:flutter/material.dart';
 
 void main() {
