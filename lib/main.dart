@@ -1,4 +1,4 @@
-import 'package:first_application/hobbies_demo.dart';
+import 'package:first_application/rto_mcqs_quiz_demo/rto_demo3_demo.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,11 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        useMaterial3: false,
-      ),
       debugShowCheckedModeBanner: false,
-      home: const HobbiesDemo(),
+      theme: ThemeData(
+        brightness: Brightness.light,
+      ),
+      home: const QuizPage2(),
     );
   }
+
+  static void isDarkModeOn() {}
 }
