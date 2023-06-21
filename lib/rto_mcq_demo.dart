@@ -58,6 +58,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans1,
                             onChanged: (value) {
                               Mcqs.ans1 = Mcqs.data[0]['optionA'].toString();
+                              Mcqs.isSelected[0] = true;
                               setState(() {});
                             },
                           ),
@@ -73,6 +74,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans1,
                             onChanged: (value) {
                               Mcqs.ans1 = Mcqs.data[0]['optionB'].toString();
+                              Mcqs.isSelected[0] = true;
                               setState(() {});
                             },
                           ),
@@ -88,6 +90,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans1,
                             onChanged: (value) {
                               Mcqs.ans1 = Mcqs.data[0]['optionC'].toString();
+                              Mcqs.isSelected[0] = true;
                               setState(() {});
                             },
                           ),
@@ -103,6 +106,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans1,
                             onChanged: (value) {
                               Mcqs.ans1 = Mcqs.data[0]['optionD'].toString();
+                              Mcqs.isSelected[0] = true;
                               setState(() {});
                             },
                           ),
@@ -144,6 +148,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans2,
                             onChanged: (value) {
                               Mcqs.ans2 = Mcqs.data[1]['optionA'].toString();
+                              Mcqs.isSelected[1] = true;
                               setState(() {});
                             },
                           ),
@@ -159,6 +164,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans2,
                             onChanged: (value) {
                               Mcqs.ans2 = Mcqs.data[1]['optionB'].toString();
+                              Mcqs.isSelected[1] = true;
                               setState(() {});
                             },
                           ),
@@ -174,6 +180,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans2,
                             onChanged: (value) {
                               Mcqs.ans2 = Mcqs.data[1]['optionC'].toString();
+                              Mcqs.isSelected[1] = true;
                               setState(() {});
                             },
                           ),
@@ -189,6 +196,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans2,
                             onChanged: (value) {
                               Mcqs.ans2 = Mcqs.data[1]['optionD'].toString();
+                              Mcqs.isSelected[1] = true;
                               setState(() {});
                             },
                           ),
@@ -230,6 +238,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans3,
                             onChanged: (value) {
                               Mcqs.ans3 = Mcqs.data[2]['optionA'].toString();
+                              Mcqs.isSelected[2] = true;
                               setState(() {});
                             },
                           ),
@@ -245,6 +254,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans3,
                             onChanged: (value) {
                               Mcqs.ans3 = Mcqs.data[2]['optionB'].toString();
+                              Mcqs.isSelected[2] = true;
                               setState(() {});
                             },
                           ),
@@ -260,6 +270,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans3,
                             onChanged: (value) {
                               Mcqs.ans3 = Mcqs.data[2]['optionC'].toString();
+                              Mcqs.isSelected[2] = true;
                               setState(() {});
                             },
                           ),
@@ -275,6 +286,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans3,
                             onChanged: (value) {
                               Mcqs.ans3 = Mcqs.data[2]['optionD'].toString();
+                              Mcqs.isSelected[2] = true;
                               setState(() {});
                             },
                           ),
@@ -316,6 +328,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans4,
                             onChanged: (value) {
                               Mcqs.ans4 = Mcqs.data[3]['optionA'].toString();
+                              Mcqs.isSelected[3] = true;
                               setState(() {});
                             },
                           ),
@@ -331,6 +344,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans4,
                             onChanged: (value) {
                               Mcqs.ans4 = Mcqs.data[3]['optionB'].toString();
+                              Mcqs.isSelected[3] = true;
                               setState(() {});
                             },
                           ),
@@ -346,6 +360,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans4,
                             onChanged: (value) {
                               Mcqs.ans4 = Mcqs.data[3]['optionC'].toString();
+                              Mcqs.isSelected[3] = true;
                               setState(() {});
                             },
                           ),
@@ -361,6 +376,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans4,
                             onChanged: (value) {
                               Mcqs.ans4 = Mcqs.data[3]['optionD'].toString();
+                              Mcqs.isSelected[3] = true;
                               setState(() {});
                             },
                           ),
@@ -402,6 +418,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans5,
                             onChanged: (value) {
                               Mcqs.ans5 = Mcqs.data[4]['optionA'].toString();
+                              Mcqs.isSelected[4] = true;
                               setState(() {});
                             },
                           ),
@@ -417,6 +434,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans5,
                             onChanged: (value) {
                               Mcqs.ans5 = Mcqs.data[4]['optionB'].toString();
+                              Mcqs.isSelected[4] = true;
                               setState(() {});
                             },
                           ),
@@ -432,6 +450,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans5,
                             onChanged: (value) {
                               Mcqs.ans5 = Mcqs.data[4]['optionC'].toString();
+                              Mcqs.isSelected[4] = true;
                               setState(() {});
                             },
                           ),
@@ -447,6 +466,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans5,
                             onChanged: (value) {
                               Mcqs.ans5 = Mcqs.data[4]['optionD'].toString();
+                              Mcqs.isSelected[4] = true;
                               setState(() {});
                             },
                           ),
@@ -488,6 +508,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans6,
                             onChanged: (value) {
                               Mcqs.ans6 = Mcqs.data[5]['optionA'].toString();
+                              Mcqs.isSelected[5] = true;
                               setState(() {});
                             },
                           ),
@@ -503,6 +524,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans6,
                             onChanged: (value) {
                               Mcqs.ans6 = Mcqs.data[5]['optionB'].toString();
+                              Mcqs.isSelected[5] = true;
                               setState(() {});
                             },
                           ),
@@ -518,6 +540,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans6,
                             onChanged: (value) {
                               Mcqs.ans6 = Mcqs.data[5]['optionC'].toString();
+                              Mcqs.isSelected[5] = true;
                               setState(() {});
                             },
                           ),
@@ -533,6 +556,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans6,
                             onChanged: (value) {
                               Mcqs.ans6 = Mcqs.data[5]['optionD'].toString();
+                              Mcqs.isSelected[5] = true;
                               setState(() {});
                             },
                           ),
@@ -574,6 +598,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans7,
                             onChanged: (value) {
                               Mcqs.ans7 = Mcqs.data[6]['optionA'].toString();
+                              Mcqs.isSelected[6] = true;
                               setState(() {});
                             },
                           ),
@@ -589,6 +614,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans7,
                             onChanged: (value) {
                               Mcqs.ans7 = Mcqs.data[6]['optionB'].toString();
+                              Mcqs.isSelected[6] = true;
                               setState(() {});
                             },
                           ),
@@ -604,6 +630,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans7,
                             onChanged: (value) {
                               Mcqs.ans7 = Mcqs.data[6]['optionC'].toString();
+                              Mcqs.isSelected[6] = true;
                               setState(() {});
                             },
                           ),
@@ -619,6 +646,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans7,
                             onChanged: (value) {
                               Mcqs.ans7 = Mcqs.data[6]['optionD'].toString();
+                              Mcqs.isSelected[6] = true;
                               setState(() {});
                             },
                           ),
@@ -660,6 +688,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans8,
                             onChanged: (value) {
                               Mcqs.ans8 = Mcqs.data[7]['optionA'].toString();
+                              Mcqs.isSelected[7] = true;
                               setState(() {});
                             },
                           ),
@@ -675,6 +704,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans8,
                             onChanged: (value) {
                               Mcqs.ans8 = Mcqs.data[7]['optionB'].toString();
+                              Mcqs.isSelected[7] = true;
                               setState(() {});
                             },
                           ),
@@ -690,6 +720,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans8,
                             onChanged: (value) {
                               Mcqs.ans8 = Mcqs.data[7]['optionC'].toString();
+                              Mcqs.isSelected[7] = true;
                               setState(() {});
                             },
                           ),
@@ -705,6 +736,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans8,
                             onChanged: (value) {
                               Mcqs.ans8 = Mcqs.data[7]['optionD'].toString();
+                              Mcqs.isSelected[7] = true;
                               setState(() {});
                             },
                           ),
@@ -746,6 +778,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans9,
                             onChanged: (value) {
                               Mcqs.ans9 = Mcqs.data[8]['optionA'].toString();
+                              Mcqs.isSelected[8] = true;
                               setState(() {});
                             },
                           ),
@@ -761,6 +794,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans9,
                             onChanged: (value) {
                               Mcqs.ans9 = Mcqs.data[8]['optionB'].toString();
+                              Mcqs.isSelected[8] = true;
                               setState(() {});
                             },
                           ),
@@ -776,6 +810,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans9,
                             onChanged: (value) {
                               Mcqs.ans9 = Mcqs.data[8]['optionC'].toString();
+                              Mcqs.isSelected[8] = true;
                               setState(() {});
                             },
                           ),
@@ -791,6 +826,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans9,
                             onChanged: (value) {
                               Mcqs.ans9 = Mcqs.data[8]['optionD'].toString();
+                              Mcqs.isSelected[8] = true;
                               setState(() {});
                             },
                           ),
@@ -832,6 +868,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans10,
                             onChanged: (value) {
                               Mcqs.ans10 = Mcqs.data[9]['optionA'].toString();
+                              Mcqs.isSelected[9] = true;
                               setState(() {});
                             },
                           ),
@@ -847,6 +884,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans10,
                             onChanged: (value) {
                               Mcqs.ans10 = Mcqs.data[9]['optionB'].toString();
+                              Mcqs.isSelected[9] = true;
                               setState(() {});
                             },
                           ),
@@ -862,6 +900,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans10,
                             onChanged: (value) {
                               Mcqs.ans10 = Mcqs.data[9]['optionC'].toString();
+                              Mcqs.isSelected[9] = true;
                               setState(() {});
                             },
                           ),
@@ -877,6 +916,7 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                             groupValue: Mcqs.ans10,
                             onChanged: (value) {
                               Mcqs.ans10 = Mcqs.data[9]['optionD'].toString();
+                              Mcqs.isSelected[9] = true;
                               setState(() {});
                             },
                           ),
@@ -890,21 +930,32 @@ class _RtoMcqDemoState extends State<RtoMcqDemo> {
                 ],
               ),
             ),
-            MaterialButton(
-              onPressed: () {
-                Mcqs.onSubmit();
-                Mcqs.isSubmited = !Mcqs.isSubmited;
-                Mcqs.clearAll();
-                setState(() {});
-              },
-              color: Colors.blue,
-              child: const Text(
-                'Submit',
-                style: TextStyle(
-                  color: Colors.white,
-                ),
-              ),
-            ),
+            (Mcqs.isSelected[0] == true &&
+                    Mcqs.isSelected[1] == true &&
+                    Mcqs.isSelected[2] == true &&
+                    Mcqs.isSelected[3] == true &&
+                    Mcqs.isSelected[4] == true &&
+                    Mcqs.isSelected[5] == true &&
+                    Mcqs.isSelected[6] == true &&
+                    Mcqs.isSelected[7] == true &&
+                    Mcqs.isSelected[8] == true &&
+                    Mcqs.isSelected[9] == true)
+                ? MaterialButton(
+                    onPressed: () {
+                      Mcqs.onSubmit();
+                      Mcqs.isSubmited = !Mcqs.isSubmited;
+                      Mcqs.clearAll();
+                      setState(() {});
+                    },
+                    color: Colors.blue,
+                    child: const Text(
+                      'Submit',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  )
+                : const SizedBox(),
             Mcqs.isSubmited
                 ? Text(
                     'Your Score is ${Mcqs.points}',

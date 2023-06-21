@@ -11,6 +11,7 @@ class Mcqs {
       ans10 = '';
   static int points = 0;
   static bool isSubmited = false;
+  static List isSelected = List.generate(10, (index) => false);
 
   static List<Map<String, dynamic>> data = [
     {
@@ -115,15 +116,15 @@ class Mcqs {
 
   static void onSubmit() {
     (data[0]['rightAns'] == ans1) ? points += 5 : points -= 2;
-    (data[0]['rightAns'] == ans2) ? points += 5 : points -= 2;
-    (data[0]['rightAns'] == ans3) ? points += 5 : points -= 2;
-    (data[0]['rightAns'] == ans4) ? points += 5 : points -= 2;
-    (data[0]['rightAns'] == ans5) ? points += 5 : points -= 2;
-    (data[0]['rightAns'] == ans6) ? points += 5 : points -= 2;
-    (data[0]['rightAns'] == ans7) ? points += 5 : points -= 2;
-    (data[0]['rightAns'] == ans8) ? points += 5 : points -= 2;
-    (data[0]['rightAns'] == ans9) ? points += 5 : points -= 2;
-    (data[0]['rightAns'] == ans10) ? points += 5 : points -= 2;
+    (data[1]['rightAns'] == ans2) ? points += 5 : points -= 2;
+    (data[2]['rightAns'] == ans3) ? points += 5 : points -= 2;
+    (data[3]['rightAns'] == ans4) ? points += 5 : points -= 2;
+    (data[4]['rightAns'] == ans5) ? points += 5 : points -= 2;
+    (data[5]['rightAns'] == ans6) ? points += 5 : points -= 2;
+    (data[6]['rightAns'] == ans7) ? points += 5 : points -= 2;
+    (data[7]['rightAns'] == ans8) ? points += 5 : points -= 2;
+    (data[8]['rightAns'] == ans9) ? points += 5 : points -= 2;
+    (data[9]['rightAns'] == ans10) ? points += 5 : points -= 2;
   }
 
   static clearAll() {
@@ -139,6 +140,7 @@ class Mcqs {
       ans8 = '';
       ans9 = '';
       ans10 = '';
+      isSelected = List.generate(10, (index) => false);
     }
   }
 }
