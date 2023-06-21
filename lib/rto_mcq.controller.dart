@@ -114,38 +114,16 @@ class Mcqs {
   ];
 
   static void onSubmit() {
-    if (data[0]['rightAns'] == ans1) {
-      points += 5;
-    }
-    if (data[1]['rightAns'] == ans2) {
-      points += 5;
-    }
-    if (data[2]['rightAns'] == ans3) {
-      points += 5;
-    }
-    if (data[3]['rightAns'] == ans4) {
-      points += 5;
-    }
-    if (data[4]['rightAns'] == ans5) {
-      points += 5;
-    }
-    if (data[5]['rightAns'] == ans6) {
-      points += 5;
-    }
-    if (data[6]['rightAns'] == ans7) {
-      points += 5;
-    }
-    if (data[7]['rightAns'] == ans8) {
-      points += 5;
-    }
-    if (data[8]['rightAns'] == ans9) {
-      points += 5;
-    }
-    if (data[9]['rightAns'] == ans10) {
-      points += 5;
-    } else {
-      points -= 2;
-    }
+    (data[0]['rightAns'] == ans1) ? points += 5 : points -= 2;
+    (data[0]['rightAns'] == ans2) ? points += 5 : points -= 2;
+    (data[0]['rightAns'] == ans3) ? points += 5 : points -= 2;
+    (data[0]['rightAns'] == ans4) ? points += 5 : points -= 2;
+    (data[0]['rightAns'] == ans5) ? points += 5 : points -= 2;
+    (data[0]['rightAns'] == ans6) ? points += 5 : points -= 2;
+    (data[0]['rightAns'] == ans7) ? points += 5 : points -= 2;
+    (data[0]['rightAns'] == ans8) ? points += 5 : points -= 2;
+    (data[0]['rightAns'] == ans9) ? points += 5 : points -= 2;
+    (data[0]['rightAns'] == ans10) ? points += 5 : points -= 2;
   }
 
   static clearAll() {
