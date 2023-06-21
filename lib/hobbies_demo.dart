@@ -15,6 +15,7 @@ class _HobbiesDemoState extends State<HobbiesDemo> {
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Padding(
@@ -29,12 +30,13 @@ class _HobbiesDemoState extends State<HobbiesDemo> {
               ),
             ),
             Expanded(
-              flex: 5,
+              flex: 2,
               child: ListView.builder(
                 scrollDirection: Axis.vertical,
                 itemCount: Hobbies.hobbiesDetails.length,
                 itemBuilder: (context, index) {
                   return Column(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
                       Row(
                         children: [
@@ -72,7 +74,6 @@ class _HobbiesDemoState extends State<HobbiesDemo> {
             ),
             Hobbies.isSubmited
                 ? Expanded(
-                    flex: 4,
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: SizedBox(
