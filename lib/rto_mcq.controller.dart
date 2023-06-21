@@ -12,7 +12,7 @@ class Mcqs {
   static int points = 0;
   static bool isSubmited = false;
   static List isSelected = List.generate(10, (index) => false);
-
+  static List answers = [];
   static List<Map<String, dynamic>> data = [
     {
       'queNo': '(1). ',
