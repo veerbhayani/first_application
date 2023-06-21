@@ -1,4 +1,4 @@
-import 'package:first_application/rto_demo2.dart';
+import 'package:first_application/hobbies_demo.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,10 +14,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        useMaterial3: true,
+        useMaterial3: false,
       ),
       debugShowCheckedModeBanner: false,
-      home: const QuizPage(),
+      home: const HobbiesDemo(),
     );
   }
 }

@@ -1,17 +1,6 @@
 class Hobbies {
   static bool isSubmited = false;
-  static List isTrue = [
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-  ];
+  static List isTrue = List.generate(hobbiesDetails.length, (index) => false);
   static List hobbiesDetails = [
     'Cricket',
     'Football',
@@ -22,12 +11,14 @@ class Hobbies {
     'BasketBall',
     'Kabbadi',
     'Vollyball',
-    'Dancing'
+    'Dancing',
+    'Playing',
+    'Tracking'
   ];
 
   static List selectedHobbies = [];
   static void checkIsTrue() {
-    for (int i = 0; i < isTrue.length - 1; i++) {
+    for (int i = 0; i < isTrue.length; i++) {
       if (isTrue[i] == true) {
         selectedHobbies.add(
           hobbiesDetails[i],
@@ -39,18 +30,7 @@ class Hobbies {
   static void onSubmit() {
     if (isSubmited == true) {
       selectedHobbies.clear();
-      isTrue = [
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-      ];
+      isTrue = List.generate(hobbiesDetails.length, (index) => false);
     }
   }
 }
