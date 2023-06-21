@@ -1,4 +1,4 @@
-import 'package:first_application/pageview_demo.dart';
+import 'package:first_application/rto_demo2.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: false,
       ),
       debugShowCheckedModeBanner: false,
-      home: const PageViewDemo(),
+      home: const QuizPage(),
     );
   }
 }
