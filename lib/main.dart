@@ -1,4 +1,4 @@
-import 'package:first_application/rto_mcq_demo.dart';
+import 'package:first_application/hobbies_demo.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(useMaterial3: false),
       debugShowCheckedModeBanner: false,
-      home: const RtoMcqDemo(),
+      home: const HobbiesDemo(),
     );
   }
 }
