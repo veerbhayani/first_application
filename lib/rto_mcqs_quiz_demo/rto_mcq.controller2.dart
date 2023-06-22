@@ -141,4 +141,17 @@ class QuizQuestion {
       isSubmited = false;
     }
   }
+
+  static bool get isSelectedAll {
+    bool? val;
+    for (var element in isSelected) {
+      if (element == true) {
+        val = true;
+      } else {
+        val = false;
+        break;
+      }
+    }
+    return val!;
+  }
 }

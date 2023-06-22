@@ -10,9 +10,6 @@ class QuizPage extends StatefulWidget {
 }
 
 class QuizPageState extends State<QuizPage> {
-  final GlobalKey<ScaffoldMessengerState> scafKey =
-      GlobalKey<ScaffoldMessengerState>();
-
   bool isDarkMode = false;
   @override
   Widget build(BuildContext context) {
@@ -21,7 +18,6 @@ class QuizPageState extends State<QuizPage> {
         brightness: isDarkMode ? Brightness.dark : Brightness.light,
       ),
       child: Scaffold(
-        key: scafKey,
         appBar: AppBar(
           title: const Text('RTO MCQs Quiz'),
           actions: [
@@ -39,71 +35,74 @@ class QuizPageState extends State<QuizPage> {
         body: Column(
           children: [
             Expanded(
-              child: ListView.builder(
-                scrollDirection: Axis.vertical,
-                primary: true,
-                itemCount: QuizQuestion.quizQuestions.length,
-                itemBuilder: (context, index) {
-                  return Padding(
-                    padding: const EdgeInsets.all(
-                      15,
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Q${index + 1}: ${QuizQuestion.quizQuestions[index].question}',
-                          style: const TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16.0,
+              child: ScrollConfiguration(
+                behavior: ScrollConfiguration.of(context).copyWith(
+                  scrollbars: false,
+                  overscroll: false,
+                  physics: const BouncingScrollPhysics(),
+                ),
+                child: ListView.builder(
+                  scrollDirection: Axis.vertical,
+                  primary: true,
+                  itemCount: QuizQuestion.quizQuestions.length,
+                  itemBuilder: (context, index) {
+                    return Padding(
+                      padding: const EdgeInsets.all(
+                        15,
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Q${index + 1}: ${QuizQuestion.quizQuestions[index].question}',
+                            style: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16.0,
+                            ),
                           ),
-                        ),
-                        const SizedBox(
-                          height: 8,
-                        ),
-                        Column(
-                          children: List.generate(
-                            QuizQuestion.quizQuestions[index].options.length,
-                            (optionIndex) {
-                              return Row(
-                                children: [
-                                  Radio(
-                                    value: optionIndex,
-                                    groupValue: QuizQuestion.userAnswers[index],
-                                    onChanged: (value) {
-                                      QuizQuestion.userAnswers[index] = value!;
-                                      QuizQuestion.isSelected[index] = true;
-                                      setState(() {});
-                                    },
-                                  ),
-                                  Text(
-                                    QuizQuestion.quizQuestions[index]
-                                        .options[optionIndex],
-                                    style: const TextStyle(
-                                      fontWeight: FontWeight.w500,
+                          const SizedBox(
+                            height: 8,
+                          ),
+                          Column(
+                            children: List.generate(
+                              QuizQuestion.quizQuestions[index].options.length,
+                              (optionIndex) {
+                                return Row(
+                                  children: [
+                                    Radio(
+                                      value: optionIndex,
+                                      groupValue:
+                                          QuizQuestion.userAnswers[index],
+                                      onChanged: (value) {
+                                        QuizQuestion.userAnswers[index] =
+                                            value!;
+                                        QuizQuestion.isSelected[index] = true;
+                                        setState(() {});
+                                      },
                                     ),
-                                  ),
-                                ],
-                              );
-                            },
+                                    SizedBox(
+                                      width: 280,
+                                      child: Text(
+                                        QuizQuestion.quizQuestions[index]
+                                            .options[optionIndex],
+                                        style: const TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                );
+                              },
+                            ),
                           ),
-                        ),
-                      ],
-                    ),
-                  );
-                },
+                        ],
+                      ),
+                    );
+                  },
+                ),
               ),
             ),
-            (QuizQuestion.isSelected[0] == true &&
-                    QuizQuestion.isSelected[1] == true &&
-                    QuizQuestion.isSelected[2] == true &&
-                    QuizQuestion.isSelected[3] == true &&
-                    QuizQuestion.isSelected[4] == true &&
-                    QuizQuestion.isSelected[5] == true &&
-                    QuizQuestion.isSelected[6] == true &&
-                    QuizQuestion.isSelected[7] == true &&
-                    QuizQuestion.isSelected[8] == true &&
-                    QuizQuestion.isSelected[9] == true)
+            QuizQuestion.isSelectedAll == true
                 ? MaterialButton(
                     onPressed: () {
                       QuizQuestion.isCorrect();
