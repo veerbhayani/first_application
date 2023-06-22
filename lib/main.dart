@@ -1,4 +1,4 @@
-import 'package:first_application/pageview.builder.demo.dart';
+import 'package:first_application/rto_mcqs_quiz_demo/rto_demo2.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,12 +12,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        brightness: Brightness.light,
-      ),
-      home: const PageViewBuilderDemo(),
+      home: QuizPage(),
     );
   }
 }

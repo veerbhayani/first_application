@@ -13,7 +13,8 @@ class Hobbies {
     'Vollyball',
     'Dancing',
     'Playing',
-    'Tracking'
+    'Tracking',
+    'Swimming'
   ];
 
   static List selectedHobbies = [];
