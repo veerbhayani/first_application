@@ -17,6 +17,11 @@ class RadioButtonDemoState extends State<RadioButtonDemo> {
         children: [
           const Text('Gender'),
           Radio(
+            activeColor: Colors.blue,
+            toggleable: true,
+            // autofocus: true,
+            mouseCursor: MaterialStateMouseCursor.clickable,
+            splashRadius: 20,
             value: male,
             groupValue: gender,
             onChanged: (value) {
@@ -27,6 +32,7 @@ class RadioButtonDemoState extends State<RadioButtonDemo> {
           const Text('Male'),
           Radio(
             value: female,
+            activeColor: Colors.pink,
             groupValue: gender,
             onChanged: (value) {
               gender = value!;

@@ -32,6 +32,9 @@ class _PopUpMenuButtonDemoState extends State<PopUpMenuButtonDemo> {
           // onSelected: ,
           // position: ,
           // tooltip: ,
+          position: PopupMenuPosition.over,
+          tooltip: 'select friend names',
+
           initialValue: selectedValue,
           enabled: true,
           clipBehavior: Clip.none,
@@ -48,16 +51,9 @@ class _PopUpMenuButtonDemoState extends State<PopUpMenuButtonDemo> {
                 ),
               )
               .toList(),
-          // ********** R&D ************ //
-          // child: ,
-          // clipBehavior: ,
-          // initialValue: ,
-          // onCanceled: ,
-          // onOpened: ,
-          // onSelected: ,
-          // position: ,
           child: const Icon(
-            Icons.add,
+            Icons.arrow_drop_down,
+            size: 55,
           ),
         ),
       ),

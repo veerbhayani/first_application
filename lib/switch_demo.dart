@@ -21,6 +21,9 @@ class _SwitchDemoState extends State<SwitchDemo> {
               const Text('isActive'),
               Switch(
                   value: isOn,
+                  inactiveThumbColor: Colors.red,
+                  activeColor: Colors.blue,
+                  splashRadius: 20,
                   onChanged: (value) {
                     isOn = value;
                     setState(() {});
@@ -32,6 +35,9 @@ class _SwitchDemoState extends State<SwitchDemo> {
             children: [
               const Text('isActive'),
               CupertinoSwitch(
+                  applyTheme: true,
+                  trackColor: Colors.black,
+                  activeColor: Colors.green,
                   value: isON2,
                   onChanged: (value) {
                     isON2 = value;

@@ -14,10 +14,20 @@ class _SliderDemoState extends State<SliderDemo> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Slider(
               min: 0,
               max: 100,
+              // activeColor: Colors.black,
+              inactiveColor: Colors.blueGrey,
+              label: 'Volume Up',
+              // thumbColor: Colors.lime,
+              // mouseCursor: MouseCursor.uncontrolled,
+              // autofocus: true,
+              // focusNode: FocusNode(),
+              // secondaryActiveColor: Colors.orange,
+
               value: selectPrice,
               onChanged: (value) {
                 selectPrice = value;

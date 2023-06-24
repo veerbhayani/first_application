@@ -13,6 +13,7 @@ class _StepperDemoState extends State<StepperDemo> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stepper(
+        elevation: 20,
         currentStep: stepIndex,
         onStepCancel: stepIndex != 0
             ? () {
