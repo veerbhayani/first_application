@@ -1,5 +1,7 @@
+import 'package:first_application/row_data.dart';
 import 'package:flutter/material.dart';
 
+import 'mcq_model.dart';
 import 'rto_mcq.controller2.dart';
 
 class QuizPage extends StatefulWidget {
@@ -9,10 +11,24 @@ class QuizPage extends StatefulWidget {
   QuizPageState createState() => QuizPageState();
 }
 
+List<Mcq> mcqDetails = [];
+
 class QuizPageState extends State<QuizPage> {
   bool isDarkMode = false;
+
+  @override
+  void initState() {
+    print('Called First');
+    for (var element in mcqData) {
+      mcqDetails.add(Mcq.fromJson(element));
+    }
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
+    print('Called Second');
+
     return Theme(
       data: ThemeData(
         brightness: isDarkMode ? Brightness.dark : Brightness.light,
@@ -44,7 +60,7 @@ class QuizPageState extends State<QuizPage> {
                 child: ListView.builder(
                   scrollDirection: Axis.vertical,
                   primary: true,
-                  itemCount: QuizQuestion.quizQuestions.length,
+                  itemCount: mcqDetails.length,
                   itemBuilder: (context, index) {
                     return Padding(
                       padding: const EdgeInsets.all(
@@ -54,7 +70,7 @@ class QuizPageState extends State<QuizPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Q${index + 1}: ${QuizQuestion.quizQuestions[index].question}',
+                            'Q${index + 1}: ${mcqDetails[index].question}',
                             style: const TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 16.0,
@@ -65,7 +81,7 @@ class QuizPageState extends State<QuizPage> {
                           ),
                           Column(
                             children: List.generate(
-                              QuizQuestion.quizQuestions[index].options.length,
+                              mcqDetails[index].options!.length,
                               (optionIndex) {
                                 return Row(
                                   children: [
@@ -83,8 +99,7 @@ class QuizPageState extends State<QuizPage> {
                                     SizedBox(
                                       width: 280,
                                       child: Text(
-                                        QuizQuestion.quizQuestions[index]
-                                            .options[optionIndex],
+                                        mcqDetails[index].options![optionIndex],
                                         style: const TextStyle(
                                           fontWeight: FontWeight.w500,
                                         ),
@@ -105,7 +120,7 @@ class QuizPageState extends State<QuizPage> {
             QuizQuestion.isSelectedAll == true
                 ? MaterialButton(
                     onPressed: () {
-                      QuizQuestion.isCorrect();
+                      QuizQuestion.isCorrect;
 
                       QuizQuestion.isSubmited = !QuizQuestion.isSubmited;
                       ScaffoldMessenger.of(context).showSnackBar(
@@ -121,7 +136,7 @@ class QuizPageState extends State<QuizPage> {
                           backgroundColor:
                               isDarkMode ? Colors.black : Colors.white,
                           onVisible: () {
-                            QuizQuestion.onSubmit();
+                            QuizQuestion.onSubmit;
                             setState(() {});
                           },
                         ),

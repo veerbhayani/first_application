@@ -10,10 +10,8 @@ class HomeNavigation extends StatefulWidget {
 class _HomeNavigationState extends State<HomeNavigation> {
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text(
-        'Home Content Here',
-      ),
+    return Scaffold(
+      appBar: AppBar(),
     );
   }
 }
