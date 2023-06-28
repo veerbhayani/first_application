@@ -1,4 +1,4 @@
-import 'package:first_application/row_data.dart';
+import 'package:first_application/raw_data/rto.raw.data.dart';
 import 'package:flutter/material.dart';
 
 import 'mcq_model.dart';
