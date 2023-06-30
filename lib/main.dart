@@ -1,4 +1,4 @@
-import 'package:first_application/simple_crud_demo/palindrome_number_demo.dart';
+import 'package:first_application/simple_crud_demo/pattern_demo.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PalindromeNumberDemo(),
+      home: PatternDemo(),
     );
   }
 }

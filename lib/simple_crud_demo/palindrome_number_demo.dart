@@ -18,6 +18,7 @@ class _PalindromeNumberDemoState extends State<PalindromeNumberDemo> {
   }
 
   int? enteredNumber;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,7 +55,7 @@ class _PalindromeNumberDemoState extends State<PalindromeNumberDemo> {
             Text(
               CheckPalindromeNumber.palindromeNumber(enteredNumber!),
               style: const TextStyle(
-                fontSize: 25,
+                fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
