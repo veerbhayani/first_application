@@ -79,14 +79,46 @@ class _SingleTextFieldCrudDemoState extends State<SingleTextFieldCrudDemo> {
                           setState(() {});
                         },
                         key: UniqueKey(),
+                        background: Container(
+                          color: Colors.red[300],
+                          child: const Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Text(
+                                'Swipe to delete',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
                         child: ListTile(
                           onTap: () {
                             isUpdate = true;
                             selectedIndex = index;
                             setState(() {});
                           },
+                          leading: CircleAvatar(
+                            child: Text(
+                              userData[index]
+                                  .toString()
+                                  .characters
+                                  .first
+                                  .toUpperCase(),
+                            ),
+                          ),
                           title: Text(
                             userData[index],
+                          ),
+                          trailing: TextButton(
+                            onPressed: () {
+                              userData.removeAt(index);
+                              setState(() {});
+                            },
+                            child: const Text('delete'),
                           ),
                         ),
                       );
