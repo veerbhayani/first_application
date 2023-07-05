@@ -311,11 +311,8 @@ class GenderFormDemoState extends State<GenderFormDemo> {
                         itemCount: 1,
                         itemBuilder: (context, index) => Text(
                           'Gender is ${OnSubmit.selectedGender}\nHobbies are ${OnSubmit.selectedHobbies}',
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 25,
-                            color: OnSubmit.isSubmited
-                                ? Colors.white
-                                : Colors.black,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
