@@ -42,6 +42,7 @@ class _RegistrationFormDemoState extends State<RegistrationFormDemo> {
             child: TextField(
               controller: _firstNameTextController,
               decoration: const InputDecoration(
+                label: Text('First Name'),
                 border: OutlineInputBorder(),
               ),
             ),
@@ -51,15 +52,9 @@ class _RegistrationFormDemoState extends State<RegistrationFormDemo> {
               10,
             ),
             child: TextField(
-              onTap: isUpdate
-                  ? () {
-                      setState(() {});
-                    }
-                  : () {
-                      setState(() {});
-                    },
               controller: _middleNameTextController,
               decoration: const InputDecoration(
+                label: Text('Middle Name'),
                 border: OutlineInputBorder(),
               ),
             ),
@@ -71,6 +66,7 @@ class _RegistrationFormDemoState extends State<RegistrationFormDemo> {
             child: TextField(
               controller: _ageTextController,
               decoration: const InputDecoration(
+                label: Text('Age'),
                 border: OutlineInputBorder(),
               ),
             ),
