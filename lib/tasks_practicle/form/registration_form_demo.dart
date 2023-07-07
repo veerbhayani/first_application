@@ -188,6 +188,12 @@ class _RegistrationFormDemoState extends State<RegistrationFormDemo> {
                         child: ListTile(
                           onTap: () {
                             isUpdate = true;
+                            _firstNameTextController.text =
+                                userFirstName[index];
+                            _middleNameTextController.text =
+                                userMiddleName[index];
+                            _ageTextController.text = userAge[index];
+                            gender = userGender[index];
                             selectedIndex = index;
                             setState(() {});
                           },
