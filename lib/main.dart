@@ -1,4 +1,4 @@
-import 'package:first_application/simple_crud_using_model_class/simple_crud_model_ui.dart';
+import 'package:first_application/animation_demo/my_custom_animated_widget_ui.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SimpleCrudModelUiDemo(),
+      home: MyCustomAnimatedWidgetUi(),
     );
   }
 }
