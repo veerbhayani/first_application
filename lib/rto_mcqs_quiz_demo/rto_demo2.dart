@@ -18,7 +18,6 @@ class QuizPageState extends State<QuizPage> {
 
   @override
   void initState() {
-    print('Called First');
     for (var element in mcqData) {
       mcqDetails.add(Mcq.fromJson(element));
     }
@@ -27,8 +26,6 @@ class QuizPageState extends State<QuizPage> {
 
   @override
   Widget build(BuildContext context) {
-    print('Called Second');
-
     return Theme(
       data: ThemeData(
         brightness: isDarkMode ? Brightness.dark : Brightness.light,
