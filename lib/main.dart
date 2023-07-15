@@ -1,5 +1,6 @@
-import 'package:first_application/animation_demo/my_custom_animated_widget_ui.dart';
 import 'package:flutter/material.dart';
+
+import 'animation_demo/slide_transition_demo.dart';
 
 void main() {
   runApp(
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyCustomAnimatedWidgetUi(),
+      home: SlideTransitionDemo(),
     );
   }
 }
