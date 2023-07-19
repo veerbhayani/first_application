@@ -1,4 +1,4 @@
-import 'package:first_application/dialog_demo/date_picker_demo.dart';
+import 'package:first_application/dialog_demo/time_picker_demo.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: false,
       ),
-      home: const DatePickerDemo(),
+      home: const TimePickerDemo(),
     );
   }
 }

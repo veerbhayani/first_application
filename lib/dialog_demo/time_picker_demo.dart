@@ -9,6 +9,7 @@ class TimePickerDemo extends StatefulWidget {
 
 class _TimePickerDemoState extends State<TimePickerDemo> {
   TimeOfDay? selectedTime;
+  TimeOfDay formate = TimeOfDay.now();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +27,7 @@ class _TimePickerDemoState extends State<TimePickerDemo> {
                   hourLabelText: 'Hour',
                   minuteLabelText: 'Minute',
                   orientation: Orientation.portrait,
-                  initialTime: TimeOfDay.now(),
+                  initialTime: formate,
                 );
                 setState(() {});
               },
@@ -38,9 +39,7 @@ class _TimePickerDemoState extends State<TimePickerDemo> {
                 ),
               ),
             ),
-            Text(
-              selectedTime.toString(),
-            ),
+            Text(formate.format(context)),
           ],
         ),
       ),

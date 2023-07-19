@@ -9,6 +9,7 @@ class DatePickerDemo extends StatefulWidget {
 
 class _DatePickerDemoState extends State<DatePickerDemo> {
   DateTime? selectedDate;
+  DateTime formate = DateTime.now();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +20,7 @@ class _DatePickerDemoState extends State<DatePickerDemo> {
               onPressed: () async {
                 selectedDate = await showDatePicker(
                   context: context,
-                  currentDate: DateTime.now(),
+                  currentDate: formate,
                   confirmText: 'Confirm',
                   fieldHintText: 'mm/dd/yyyy',
                   fieldLabelText: 'Enter Date Here',
@@ -44,7 +45,7 @@ class _DatePickerDemoState extends State<DatePickerDemo> {
               ),
             ),
             Text(
-              selectedDate.toString(),
+              "${formate.day}-${formate.month}-${formate.year}",
             ),
           ],
         ),
