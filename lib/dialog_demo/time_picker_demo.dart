@@ -14,7 +14,8 @@ class _TimePickerDemoState extends State<TimePickerDemo> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Column(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             MaterialButton(
               onPressed: () async {
