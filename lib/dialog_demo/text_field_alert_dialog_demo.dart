@@ -35,7 +35,7 @@ class _SingleTextFieldAlertDialogDemoState
                   controller: TextAlertController.txtNameEditingController,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
-                    hintText: 'Name',
+                    hintText: 'First Name',
                     labelText: 'Name',
                   ),
                 ),
@@ -46,8 +46,8 @@ class _SingleTextFieldAlertDialogDemoState
                   controller: TextAlertController.txtSurNameEditingController,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
-                    hintText: 'SurName',
-                    labelText: 'SurName',
+                    hintText: 'Surname',
+                    labelText: 'Surname',
                   ),
                 ),
                 const SizedBox(
@@ -57,7 +57,7 @@ class _SingleTextFieldAlertDialogDemoState
                   controller: TextAlertController.txtUrlEditingController,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
-                    hintText: 'Url',
+                    hintText: 'Image Url',
                     labelText: 'Url',
                   ),
                 ),
@@ -90,8 +90,8 @@ class _SingleTextFieldAlertDialogDemoState
                   controller: TextAlertController.txtEmailEditingController,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
-                    hintText: 'EmailId',
-                    labelText: 'EmailId',
+                    hintText: 'Email Id',
+                    labelText: 'Email Id',
                   ),
                   validator: (value) {
                     if (value!.isEmpty) {
@@ -110,7 +110,7 @@ class _SingleTextFieldAlertDialogDemoState
                 Row(
                   children: [
                     const Text('Gender :  '),
-                    const Text('male '),
+                    const Text('Male'),
                     Radio(
                       value: TextAlertController.male,
                       groupValue: TextAlertController.gender,
@@ -119,9 +119,9 @@ class _SingleTextFieldAlertDialogDemoState
                         setState(() {});
                       },
                     ),
-                    const Text('feMale '),
+                    const Text('Female '),
                     Radio(
-                      value: TextAlertController.feMale,
+                      value: TextAlertController.female,
                       groupValue: TextAlertController.gender,
                       onChanged: (value) {
                         TextAlertController.gender = value!;
@@ -174,24 +174,25 @@ class _SingleTextFieldAlertDialogDemoState
                   ],
                 ),
                 MaterialButton(
-                    onPressed: () {
-                      TextAlertController.addUser();
-                      TextAlertController.clearMethod();
-                      setState(() {});
-                    },
-                    child: RichText(
-                      text: const TextSpan(
-                          text: 'Su',
-                          style: TextStyle(fontSize: 30, color: Colors.orange),
-                          children: [
-                            TextSpan(
-                                text: 'bm',
-                                style: TextStyle(color: Colors.black)),
-                            TextSpan(
-                                text: 'it',
-                                style: TextStyle(color: Colors.green)),
-                          ]),
-                    )),
+                  onPressed: () {
+                    TextAlertController.addUser();
+                    TextAlertController.clearMethod();
+                    TextAlertController.clearUpDateMethod();
+                    setState(() {});
+                  },
+                  child: RichText(
+                    text: const TextSpan(
+                      text: 'Su',
+                      style: TextStyle(fontSize: 30, color: Colors.orange),
+                      children: [
+                        TextSpan(
+                            text: 'bm', style: TextStyle(color: Colors.black)),
+                        TextSpan(
+                            text: 'it', style: TextStyle(color: Colors.green)),
+                      ],
+                    ),
+                  ),
+                ),
                 TextAlertController.userData.isEmpty
                     ? const Text('There is not data')
                     : Expanded(
@@ -211,241 +212,231 @@ class _SingleTextFieldAlertDialogDemoState
                                           SimpleDialog(
                                         children: [
                                           Form(
-                                              key:
-                                                  TextAlertController.keyUpdate,
-                                              child: Padding(
-                                                padding:
-                                                    const EdgeInsets.all(10),
-                                                child: Column(
-                                                  children: [
-                                                    TextFormField(
-                                                      controller:
-                                                          TextAlertController
-                                                              .txtUpdateNameEditingController,
-                                                      decoration:
-                                                          const InputDecoration(
-                                                              border:
-                                                                  OutlineInputBorder(),
-                                                              hintText: 'Name'),
-                                                    ),
-                                                    const SizedBox(
-                                                      height: 5,
-                                                    ),
-                                                    TextFormField(
-                                                      controller:
-                                                          TextAlertController
-                                                              .txtUpdateSurnameEditingController,
-                                                      decoration:
-                                                          const InputDecoration(
-                                                              border:
-                                                                  OutlineInputBorder(),
-                                                              hintText:
-                                                                  'SurName'),
-                                                    ),
-                                                    const SizedBox(
-                                                      height: 5,
-                                                    ),
-                                                    TextFormField(
-                                                      controller:
-                                                          TextAlertController
-                                                              .txtUpdateUrlEditingController,
-                                                      decoration:
-                                                          const InputDecoration(
-                                                              border:
-                                                                  OutlineInputBorder(),
-                                                              hintText: 'Url'),
-                                                    ),
-                                                    const SizedBox(
-                                                      height: 5,
-                                                    ),
-                                                    TextFormField(
-                                                      controller:
-                                                          TextAlertController
-                                                              .txtUpdateAgeEditingController,
-                                                      decoration:
-                                                          const InputDecoration(
-                                                              border:
-                                                                  OutlineInputBorder(),
-                                                              hintText: 'Age'),
-                                                    ),
-                                                    const SizedBox(
-                                                      height: 5,
-                                                    ),
-                                                    TextFormField(
-                                                      controller:
-                                                          TextAlertController
-                                                              .txtUpdateMobileEditingController,
-                                                      decoration:
-                                                          const InputDecoration(
-                                                              border:
-                                                                  OutlineInputBorder(),
-                                                              hintText:
-                                                                  'Mobile Number'),
-                                                    ),
-                                                    const SizedBox(
-                                                      height: 5,
-                                                    ),
-                                                    TextFormField(
-                                                      controller:
-                                                          TextAlertController
-                                                              .txtUpdateEmailEditingController,
-                                                      validator: (value) {
-                                                        if (value!.isEmpty) {
-                                                          return 'Enter EmailId';
-                                                        } else if (!RegExp(
-                                                                r'^[\w-\.]+@([\w-]+\.)+[\w]{2,4}$')
-                                                            .hasMatch(value)) {
-                                                          return 'valied Email';
-                                                        } else {
-                                                          return null;
-                                                        }
-                                                      },
-                                                      decoration:
-                                                          const InputDecoration(
-                                                              border:
-                                                                  OutlineInputBorder(),
-                                                              hintText:
-                                                                  'EmailId'),
-                                                    ),
-                                                    const SizedBox(
-                                                      height: 5,
-                                                    ),
-                                                    Row(
-                                                      children: [
-                                                        const Text(
-                                                            'Gender :  '),
-                                                        const Text('male '),
-                                                        Radio(
-                                                          value:
-                                                              TextAlertController
-                                                                  .male,
-                                                          groupValue:
-                                                              TextAlertController
-                                                                  .gender,
-                                                          onChanged: (value) {
+                                            key: TextAlertController.keyUpdate,
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(10),
+                                              child: Column(
+                                                children: [
+                                                  TextFormField(
+                                                    controller: TextAlertController
+                                                        .txtUpdateNameEditingController,
+                                                    decoration:
+                                                        const InputDecoration(
+                                                            border:
+                                                                OutlineInputBorder(),
+                                                            hintText: 'Name'),
+                                                  ),
+                                                  const SizedBox(
+                                                    height: 5,
+                                                  ),
+                                                  TextFormField(
+                                                    controller: TextAlertController
+                                                        .txtUpdateSurnameEditingController,
+                                                    decoration:
+                                                        const InputDecoration(
+                                                            border:
+                                                                OutlineInputBorder(),
+                                                            hintText:
+                                                                'Surname'),
+                                                  ),
+                                                  const SizedBox(
+                                                    height: 5,
+                                                  ),
+                                                  TextFormField(
+                                                    controller: TextAlertController
+                                                        .txtUpdateUrlEditingController,
+                                                    decoration:
+                                                        const InputDecoration(
+                                                            border:
+                                                                OutlineInputBorder(),
+                                                            hintText: 'Url'),
+                                                  ),
+                                                  const SizedBox(
+                                                    height: 5,
+                                                  ),
+                                                  TextFormField(
+                                                    controller: TextAlertController
+                                                        .txtUpdateAgeEditingController,
+                                                    decoration:
+                                                        const InputDecoration(
+                                                            border:
+                                                                OutlineInputBorder(),
+                                                            hintText: 'Age'),
+                                                  ),
+                                                  const SizedBox(
+                                                    height: 5,
+                                                  ),
+                                                  TextFormField(
+                                                    controller: TextAlertController
+                                                        .txtUpdateMobileEditingController,
+                                                    decoration:
+                                                        const InputDecoration(
+                                                            border:
+                                                                OutlineInputBorder(),
+                                                            hintText:
+                                                                'Mobile Number'),
+                                                  ),
+                                                  const SizedBox(
+                                                    height: 5,
+                                                  ),
+                                                  TextFormField(
+                                                    controller: TextAlertController
+                                                        .txtUpdateEmailEditingController,
+                                                    validator: (value) {
+                                                      if (value!.isEmpty) {
+                                                        return 'Enter EmailId';
+                                                      } else if (!RegExp(
+                                                              r'^[\w-\.]+@([\w-]+\.)+[\w]{2,4}$')
+                                                          .hasMatch(value)) {
+                                                        return 'valied Email';
+                                                      } else {
+                                                        return null;
+                                                      }
+                                                    },
+                                                    decoration:
+                                                        const InputDecoration(
+                                                            border:
+                                                                OutlineInputBorder(),
+                                                            hintText:
+                                                                'EmailId'),
+                                                  ),
+                                                  const SizedBox(
+                                                    height: 5,
+                                                  ),
+                                                  Row(
+                                                    children: [
+                                                      const Text('Gender :  '),
+                                                      const Text('Male'),
+                                                      Radio(
+                                                        value:
                                                             TextAlertController
-                                                                    .gender =
-                                                                value!;
-                                                            setState(() {});
-                                                          },
-                                                        ),
-                                                        const Text('feMale '),
-                                                        Radio(
-                                                          value:
-                                                              TextAlertController
-                                                                  .feMale,
-                                                          groupValue:
-                                                              TextAlertController
-                                                                  .gender,
-                                                          onChanged: (value) {
+                                                                .male,
+                                                        groupValue:
                                                             TextAlertController
-                                                                    .gender =
-                                                                value!;
-                                                            setState(() {});
-                                                          },
-                                                        ),
-                                                      ],
-                                                    ),
-                                                    const SizedBox(
-                                                      height: 5,
-                                                    ),
-                                                    Row(
-                                                      children: [
-                                                        const Text('Hobby : '),
-                                                        const Text('Cricket '),
-                                                        Checkbox(
-                                                          value:
-                                                              TextAlertController
-                                                                  .isCricket,
-                                                          onChanged: (value) {
+                                                                .gender,
+                                                        onChanged: (value) {
+                                                          TextAlertController
+                                                              .gender = value!;
+                                                          setState(() {});
+                                                        },
+                                                      ),
+                                                      const Text('Female'),
+                                                      Radio(
+                                                        value:
                                                             TextAlertController
-                                                                    .isCricket =
-                                                                value!;
-                                                            setState(() {});
-                                                          },
-                                                        ),
-                                                        const Text('Singing '),
-                                                        Checkbox(
-                                                          value:
-                                                              TextAlertController
-                                                                  .isSinging,
-                                                          onChanged: (value) {
+                                                                .female,
+                                                        groupValue:
                                                             TextAlertController
-                                                                    .isSinging =
-                                                                value!;
-                                                            setState(() {});
-                                                          },
-                                                        ),
-                                                      ],
-                                                    ),
-                                                    const SizedBox(
-                                                      height: 5,
-                                                    ),
-                                                    Row(
-                                                      children: [
-                                                        const Text('salary : '),
-                                                        Slider(
-                                                          value:
-                                                              TextAlertController
-                                                                  .selectedSalary,
-                                                          onChanged: (value) {
+                                                                .gender,
+                                                        onChanged: (value) {
+                                                          TextAlertController
+                                                              .gender = value!;
+                                                          setState(() {});
+                                                        },
+                                                      ),
+                                                    ],
+                                                  ),
+                                                  const SizedBox(
+                                                    height: 5,
+                                                  ),
+                                                  Row(
+                                                    children: [
+                                                      const Text('Hobby : '),
+                                                      const Text('Cricket '),
+                                                      Checkbox(
+                                                        value:
                                                             TextAlertController
-                                                                    .selectedSalary =
-                                                                value;
-                                                            setState(() {});
-                                                          },
-                                                          divisions: 10,
-                                                          min: 10000,
-                                                          max: 50000,
-                                                          label:
-                                                              TextAlertController
-                                                                  .selectedSalary
-                                                                  .toString(),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                    const SizedBox(
-                                                      height: 5,
-                                                    ),
-                                                    Row(
-                                                      children: [
-                                                        MaterialButton(
-                                                          onPressed: () {
-                                                            if (TextAlertController
-                                                                .keyUpdate
-                                                                .currentState!
-                                                                .validate()) {
-                                                              TextAlertController
-                                                                  .updateUserDetail();
-                                                              TextAlertController
-                                                                  .clearUpDateMethod();
+                                                                .isCricket,
+                                                        onChanged: (value) {
+                                                          TextAlertController
+                                                                  .isCricket =
+                                                              value!;
+                                                          setState(() {});
+                                                        },
+                                                      ),
+                                                      const Text('Singing '),
+                                                      Checkbox(
+                                                        value:
+                                                            TextAlertController
+                                                                .isSinging,
+                                                        onChanged: (value) {
+                                                          TextAlertController
+                                                                  .isSinging =
+                                                              value!;
+                                                          setState(() {});
+                                                        },
+                                                      ),
+                                                    ],
+                                                  ),
+                                                  const SizedBox(
+                                                    height: 5,
+                                                  ),
+                                                  Row(
+                                                    children: [
+                                                      const Text('Salary : '),
+                                                      Slider(
+                                                        value:
+                                                            TextAlertController
+                                                                .selectedSalary,
+                                                        onChanged: (value) {
+                                                          TextAlertController
+                                                                  .selectedSalary =
+                                                              value;
+                                                          setState(() {});
+                                                        },
+                                                        divisions: 10,
+                                                        min: 10000,
+                                                        max: 50000,
+                                                        label:
+                                                            TextAlertController
+                                                                .selectedSalary
+                                                                .toString(),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                  const SizedBox(
+                                                    height: 5,
+                                                  ),
+                                                  Row(
+                                                    children: [
+                                                      MaterialButton(
+                                                        onPressed: () {
+                                                          if (TextAlertController
+                                                              .keyUpdate
+                                                              .currentState!
+                                                              .validate()) {
+                                                            TextAlertController
+                                                                .updateUserDetail();
+                                                            TextAlertController
+                                                                .clearUpDateMethod();
 
-                                                              Navigator.pop(
-                                                                  context);
-                                                              setState(
-                                                                () {},
-                                                              );
-                                                            }
-                                                          },
-                                                          child: const Text(
-                                                              'Update'),
-                                                        ),
-                                                        MaterialButton(
-                                                          onPressed: () {
                                                             Navigator.pop(
                                                                 context);
                                                             setState(
                                                               () {},
                                                             );
-                                                          },
-                                                          child: const Text(
-                                                              'cancle'),
-                                                        ),
-                                                      ],
-                                                    )
-                                                  ],
-                                                ),
-                                              ))
+                                                          }
+                                                        },
+                                                        child: const Text(
+                                                            'Update'),
+                                                      ),
+                                                      MaterialButton(
+                                                        onPressed: () {
+                                                          Navigator.pop(
+                                                              context);
+                                                          setState(
+                                                            () {},
+                                                          );
+                                                        },
+                                                        child: const Text(
+                                                            'Cancle'),
+                                                      ),
+                                                    ],
+                                                  )
+                                                ],
+                                              ),
+                                            ),
+                                          ),
                                         ],
                                       ),
                                     );
@@ -460,7 +451,7 @@ class _SingleTextFieldAlertDialogDemoState
                                     context: context,
                                     builder: (context) {
                                       return AlertDialog(
-                                        title: const Text('are you sure?'),
+                                        title: const Text('Are You Sure?'),
                                         actions: [
                                           MaterialButton(
                                             onPressed: () {
@@ -480,7 +471,7 @@ class _SingleTextFieldAlertDialogDemoState
                                                 () {},
                                               );
                                             },
-                                            child: const Text('cancle'),
+                                            child: const Text('Cancle'),
                                           ),
                                         ],
                                       );

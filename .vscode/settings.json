@@ -2,5 +2,5 @@
     "editor.fontSize": 17,
     "editor.indentSize": "tabSize",
     "editor.fontLigatures": true,
-    "editor.fontFamily": "Menlo Regular"
+    "editor.fontFamily": "'Menlo'"
 }

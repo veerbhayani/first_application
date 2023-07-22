@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class TextAlertController {
   static List<User> userData = [];
   static int selectedIndex = 0;
-  static String gender = 'gender', male = 'male', feMale = 'feMale';
+  static String gender = 'gender', male = 'male', female = 'female';
   static bool isCricket = false, isSinging = false;
   static List selectedHobbylist = [];
   static double selectedSalary = 10000;
