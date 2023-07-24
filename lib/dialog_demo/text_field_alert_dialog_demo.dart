@@ -32,6 +32,10 @@ class _SingleTextFieldAlertDialogDemoState
             child: Column(
               children: [
                 TextFormField(
+                  style: const TextStyle(
+                    fontFamily: 'Menlo',
+                    fontWeight: FontWeight.bold,
+                  ),
                   controller: TextAlertController.txtNameEditingController,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
@@ -43,6 +47,10 @@ class _SingleTextFieldAlertDialogDemoState
                   height: 10,
                 ),
                 TextFormField(
+                  style: const TextStyle(
+                    fontFamily: 'Menlo',
+                    fontWeight: FontWeight.bold,
+                  ),
                   controller: TextAlertController.txtSurNameEditingController,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
@@ -54,6 +62,10 @@ class _SingleTextFieldAlertDialogDemoState
                   height: 10,
                 ),
                 TextFormField(
+                  style: const TextStyle(
+                    fontFamily: 'Menlo',
+                    fontWeight: FontWeight.bold,
+                  ),
                   controller: TextAlertController.txtUrlEditingController,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
@@ -65,6 +77,10 @@ class _SingleTextFieldAlertDialogDemoState
                   height: 10,
                 ),
                 TextFormField(
+                  style: const TextStyle(
+                    fontFamily: 'Menlo',
+                    fontWeight: FontWeight.bold,
+                  ),
                   controller: TextAlertController.txtAgeEditingController,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
@@ -76,6 +92,10 @@ class _SingleTextFieldAlertDialogDemoState
                   height: 10,
                 ),
                 TextFormField(
+                  style: const TextStyle(
+                    fontFamily: 'Menlo',
+                    fontWeight: FontWeight.bold,
+                  ),
                   controller: TextAlertController.txtMobileEditingController,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
@@ -87,6 +107,10 @@ class _SingleTextFieldAlertDialogDemoState
                   height: 10,
                 ),
                 TextFormField(
+                  style: const TextStyle(
+                    fontFamily: 'Menlo',
+                    fontWeight: FontWeight.bold,
+                  ),
                   controller: TextAlertController.txtEmailEditingController,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
@@ -109,8 +133,22 @@ class _SingleTextFieldAlertDialogDemoState
                 ),
                 Row(
                   children: [
-                    const Text('Gender :  '),
-                    const Text('Male'),
+                    const Text(
+                      'Gender :  ',
+                      style: TextStyle(
+                        fontFamily: 'Menlo',
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const Text(
+                      'Male',
+                      style: TextStyle(
+                        fontFamily: 'Menlo',
+                        fontSize: 20,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    ),
                     Radio(
                       value: TextAlertController.male,
                       groupValue: TextAlertController.gender,
@@ -119,7 +157,14 @@ class _SingleTextFieldAlertDialogDemoState
                         setState(() {});
                       },
                     ),
-                    const Text('Female '),
+                    const Text(
+                      'Female ',
+                      style: TextStyle(
+                        fontFamily: 'Menlo',
+                        fontSize: 20,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    ),
                     Radio(
                       value: TextAlertController.female,
                       groupValue: TextAlertController.gender,
@@ -135,8 +180,22 @@ class _SingleTextFieldAlertDialogDemoState
                 ),
                 Row(
                   children: [
-                    const Text('Hobby : '),
-                    const Text('Cricket '),
+                    const Text(
+                      'Hobby : ',
+                      style: TextStyle(
+                        fontFamily: 'Menlo',
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const Text(
+                      'Cricket ',
+                      style: TextStyle(
+                        fontFamily: 'Menlo',
+                        fontSize: 20,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    ),
                     Checkbox(
                       value: TextAlertController.isCricket,
                       onChanged: (value) {
@@ -144,7 +203,14 @@ class _SingleTextFieldAlertDialogDemoState
                         setState(() {});
                       },
                     ),
-                    const Text('Singing '),
+                    const Text(
+                      'Singing ',
+                      style: TextStyle(
+                        fontFamily: 'Menlo',
+                        fontSize: 20,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    ),
                     Checkbox(
                       value: TextAlertController.isSinging,
                       onChanged: (value) {
@@ -159,7 +225,14 @@ class _SingleTextFieldAlertDialogDemoState
                 ),
                 Row(
                   children: [
-                    const Text('salary : '),
+                    const Text(
+                      'Salary : ',
+                      style: TextStyle(
+                        fontFamily: 'Menlo',
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     Slider(
                       value: TextAlertController.selectedSalary,
                       onChanged: (value) {
@@ -180,21 +253,32 @@ class _SingleTextFieldAlertDialogDemoState
                     TextAlertController.clearUpDateMethod();
                     setState(() {});
                   },
-                  child: RichText(
-                    text: const TextSpan(
-                      text: 'Su',
-                      style: TextStyle(fontSize: 30, color: Colors.orange),
-                      children: [
-                        TextSpan(
-                            text: 'bm', style: TextStyle(color: Colors.black)),
-                        TextSpan(
-                            text: 'it', style: TextStyle(color: Colors.green)),
-                      ],
+                  color: Colors.blue,
+                  height: 20,
+                  focusColor: Colors.red,
+                  elevation: 8,
+                  child: const Text(
+                    'Submit',
+                    style: TextStyle(
+                      fontFamily: 'Menlo',
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.normal,
                     ),
                   ),
                 ),
+                const SizedBox(
+                  height: 20,
+                ),
                 TextAlertController.userData.isEmpty
-                    ? const Text('There is not data')
+                    ? const Text(
+                        'There is not data',
+                        style: TextStyle(
+                          fontFamily: 'Menlo',
+                          fontSize: 20,
+                          fontWeight: FontWeight.normal,
+                        ),
+                      )
                     : Expanded(
                         child: ListView.builder(
                           itemCount: TextAlertController.userData.length,
@@ -214,99 +298,148 @@ class _SingleTextFieldAlertDialogDemoState
                                           Form(
                                             key: TextAlertController.keyUpdate,
                                             child: Padding(
-                                              padding: const EdgeInsets.all(10),
+                                              padding: const EdgeInsets.all(
+                                                10,
+                                              ),
                                               child: Column(
                                                 children: [
                                                   TextFormField(
+                                                    style: const TextStyle(
+                                                      fontFamily: 'Menlo',
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                    ),
                                                     controller: TextAlertController
                                                         .txtUpdateNameEditingController,
                                                     decoration:
                                                         const InputDecoration(
-                                                            border:
-                                                                OutlineInputBorder(),
-                                                            hintText: 'Name'),
+                                                      border:
+                                                          OutlineInputBorder(),
+                                                      hintText: 'Name',
+                                                    ),
                                                   ),
                                                   const SizedBox(
                                                     height: 5,
                                                   ),
                                                   TextFormField(
+                                                    style: const TextStyle(
+                                                      fontFamily: 'Menlo',
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                    ),
                                                     controller: TextAlertController
                                                         .txtUpdateSurnameEditingController,
                                                     decoration:
                                                         const InputDecoration(
-                                                            border:
-                                                                OutlineInputBorder(),
-                                                            hintText:
-                                                                'Surname'),
+                                                      border:
+                                                          OutlineInputBorder(),
+                                                      hintText: 'Surname',
+                                                    ),
                                                   ),
                                                   const SizedBox(
                                                     height: 5,
                                                   ),
                                                   TextFormField(
+                                                    style: const TextStyle(
+                                                      fontFamily: 'Menlo',
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                    ),
                                                     controller: TextAlertController
                                                         .txtUpdateUrlEditingController,
                                                     decoration:
                                                         const InputDecoration(
-                                                            border:
-                                                                OutlineInputBorder(),
-                                                            hintText: 'Url'),
+                                                      border:
+                                                          OutlineInputBorder(),
+                                                      hintText: 'Url',
+                                                    ),
                                                   ),
                                                   const SizedBox(
                                                     height: 5,
                                                   ),
                                                   TextFormField(
+                                                    style: const TextStyle(
+                                                      fontFamily: 'Menlo',
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                    ),
                                                     controller: TextAlertController
                                                         .txtUpdateAgeEditingController,
                                                     decoration:
                                                         const InputDecoration(
-                                                            border:
-                                                                OutlineInputBorder(),
-                                                            hintText: 'Age'),
+                                                      border:
+                                                          OutlineInputBorder(),
+                                                      hintText: 'Age',
+                                                    ),
                                                   ),
                                                   const SizedBox(
                                                     height: 5,
                                                   ),
                                                   TextFormField(
+                                                    style: const TextStyle(
+                                                      fontFamily: 'Menlo',
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                    ),
                                                     controller: TextAlertController
                                                         .txtUpdateMobileEditingController,
                                                     decoration:
                                                         const InputDecoration(
-                                                            border:
-                                                                OutlineInputBorder(),
-                                                            hintText:
-                                                                'Mobile Number'),
+                                                      border:
+                                                          OutlineInputBorder(),
+                                                      hintText: 'Mobile Number',
+                                                    ),
                                                   ),
                                                   const SizedBox(
                                                     height: 5,
                                                   ),
                                                   TextFormField(
+                                                    style: const TextStyle(
+                                                      fontFamily: 'Menlo',
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                    ),
                                                     controller: TextAlertController
                                                         .txtUpdateEmailEditingController,
                                                     validator: (value) {
                                                       if (value!.isEmpty) {
-                                                        return 'Enter EmailId';
+                                                        return 'Enter Email Id';
                                                       } else if (!RegExp(
                                                               r'^[\w-\.]+@([\w-]+\.)+[\w]{2,4}$')
                                                           .hasMatch(value)) {
-                                                        return 'valied Email';
+                                                        return 'Enter Valide Email';
                                                       } else {
                                                         return null;
                                                       }
                                                     },
                                                     decoration:
                                                         const InputDecoration(
-                                                            border:
-                                                                OutlineInputBorder(),
-                                                            hintText:
-                                                                'EmailId'),
+                                                      border:
+                                                          OutlineInputBorder(),
+                                                      hintText: 'EmailId',
+                                                    ),
                                                   ),
                                                   const SizedBox(
                                                     height: 5,
                                                   ),
                                                   Row(
                                                     children: [
-                                                      const Text('Gender :  '),
-                                                      const Text('Male'),
+                                                      const Text(
+                                                        'Gender :  ',
+                                                        style: TextStyle(
+                                                          fontFamily: 'Menlo',
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                        ),
+                                                      ),
+                                                      const Text(
+                                                        'Male',
+                                                        style: TextStyle(
+                                                          fontFamily: 'Menlo',
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                        ),
+                                                      ),
                                                       Radio(
                                                         value:
                                                             TextAlertController
@@ -320,7 +453,14 @@ class _SingleTextFieldAlertDialogDemoState
                                                           setState(() {});
                                                         },
                                                       ),
-                                                      const Text('Female'),
+                                                      const Text(
+                                                        'Female',
+                                                        style: TextStyle(
+                                                          fontFamily: 'Menlo',
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                        ),
+                                                      ),
                                                       Radio(
                                                         value:
                                                             TextAlertController
@@ -341,8 +481,22 @@ class _SingleTextFieldAlertDialogDemoState
                                                   ),
                                                   Row(
                                                     children: [
-                                                      const Text('Hobby : '),
-                                                      const Text('Cricket '),
+                                                      const Text(
+                                                        'Hobby : ',
+                                                        style: TextStyle(
+                                                          fontFamily: 'Menlo',
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                        ),
+                                                      ),
+                                                      const Text(
+                                                        'Cricket ',
+                                                        style: TextStyle(
+                                                          fontFamily: 'Menlo',
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                        ),
+                                                      ),
                                                       Checkbox(
                                                         value:
                                                             TextAlertController
@@ -354,7 +508,14 @@ class _SingleTextFieldAlertDialogDemoState
                                                           setState(() {});
                                                         },
                                                       ),
-                                                      const Text('Singing '),
+                                                      const Text(
+                                                        'Singing ',
+                                                        style: TextStyle(
+                                                          fontFamily: 'Menlo',
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                        ),
+                                                      ),
                                                       Checkbox(
                                                         value:
                                                             TextAlertController
@@ -373,7 +534,14 @@ class _SingleTextFieldAlertDialogDemoState
                                                   ),
                                                   Row(
                                                     children: [
-                                                      const Text('Salary : '),
+                                                      const Text(
+                                                        'Salary : ',
+                                                        style: TextStyle(
+                                                          fontFamily: 'Menlo',
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                        ),
+                                                      ),
                                                       Slider(
                                                         value:
                                                             TextAlertController
@@ -418,7 +586,14 @@ class _SingleTextFieldAlertDialogDemoState
                                                           }
                                                         },
                                                         child: const Text(
-                                                            'Update'),
+                                                          'Update',
+                                                          style: TextStyle(
+                                                            fontFamily: 'Menlo',
+                                                            fontWeight:
+                                                                FontWeight
+                                                                    .normal,
+                                                          ),
+                                                        ),
                                                       ),
                                                       MaterialButton(
                                                         onPressed: () {
@@ -429,7 +604,14 @@ class _SingleTextFieldAlertDialogDemoState
                                                           );
                                                         },
                                                         child: const Text(
-                                                            'Cancle'),
+                                                          'Cancle',
+                                                          style: TextStyle(
+                                                            fontFamily: 'Menlo',
+                                                            fontWeight:
+                                                                FontWeight
+                                                                    .normal,
+                                                          ),
+                                                        ),
                                                       ),
                                                     ],
                                                   )
@@ -451,7 +633,13 @@ class _SingleTextFieldAlertDialogDemoState
                                     context: context,
                                     builder: (context) {
                                       return AlertDialog(
-                                        title: const Text('Are You Sure?'),
+                                        title: const Text(
+                                          'Are You Sure ?',
+                                          style: TextStyle(
+                                            fontFamily: 'Menlo',
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
                                         actions: [
                                           MaterialButton(
                                             onPressed: () {
@@ -462,7 +650,13 @@ class _SingleTextFieldAlertDialogDemoState
                                                 () {},
                                               );
                                             },
-                                            child: const Text('Delete'),
+                                            child: const Text(
+                                              'Delete',
+                                              style: TextStyle(
+                                                fontFamily: 'Menlo',
+                                                fontWeight: FontWeight.normal,
+                                              ),
+                                            ),
                                           ),
                                           MaterialButton(
                                             onPressed: () {
@@ -471,7 +665,13 @@ class _SingleTextFieldAlertDialogDemoState
                                                 () {},
                                               );
                                             },
-                                            child: const Text('Cancle'),
+                                            child: const Text(
+                                              'Cancle',
+                                              style: TextStyle(
+                                                fontFamily: 'Menlo',
+                                                fontWeight: FontWeight.normal,
+                                              ),
+                                            ),
                                           ),
                                         ],
                                       );
@@ -483,11 +683,17 @@ class _SingleTextFieldAlertDialogDemoState
                                   children: [
                                     Container(
                                       width: double.infinity,
-                                      height: 150,
-                                      padding: const EdgeInsets.all(10),
-                                      decoration: const BoxDecoration(
-                                        color:
-                                            Color.fromARGB(255, 189, 227, 244),
+                                      height: 185,
+                                      padding: const EdgeInsets.all(
+                                        10,
+                                      ),
+                                      decoration: BoxDecoration(
+                                        color: const Color.fromARGB(
+                                            255, 189, 227, 244),
+                                        border: Border.all(),
+                                        borderRadius: BorderRadius.circular(
+                                          20,
+                                        ),
                                       ),
                                       child: Column(
                                         children: [
@@ -513,35 +719,59 @@ class _SingleTextFieldAlertDialogDemoState
                                                     CrossAxisAlignment.start,
                                                 children: [
                                                   Text(
-                                                      'Name : ${TextAlertController.userData[index].name!}'),
+                                                    'Name : ${TextAlertController.userData[index].name!}',
+                                                    style: const TextStyle(
+                                                      fontFamily: 'Menlo',
+                                                    ),
+                                                  ),
                                                   Text(
-                                                      'SurName : ${TextAlertController.userData[index].surName!}'),
+                                                    'SurName : ${TextAlertController.userData[index].surName!}',
+                                                    style: const TextStyle(
+                                                      fontFamily: 'Menlo',
+                                                    ),
+                                                  ),
                                                   Text(
-                                                      'Age : ${TextAlertController.userData[index].age!.toString()}'),
+                                                    'Age : ${TextAlertController.userData[index].age!.toString()}',
+                                                    style: const TextStyle(
+                                                      fontFamily: 'Menlo',
+                                                    ),
+                                                  ),
                                                   Text(
-                                                      'Mobile Number : ${TextAlertController.userData[index].mobileNumber!.toString()}'),
+                                                    'Mobile Number : ${TextAlertController.userData[index].mobileNumber!.toString()}',
+                                                    style: const TextStyle(
+                                                      fontFamily: 'Menlo',
+                                                    ),
+                                                  ),
                                                   Text(
-                                                      'EmailId : ${TextAlertController.userData[index].emailId!}'),
+                                                    'EmailId : ${TextAlertController.userData[index].emailId!}',
+                                                    style: const TextStyle(
+                                                      fontFamily: 'Menlo',
+                                                    ),
+                                                  ),
                                                   Text(
-                                                      'Gender : ${TextAlertController.userData[index].gender!}'),
+                                                    'Gender : ${TextAlertController.userData[index].gender!}',
+                                                    style: const TextStyle(
+                                                      fontFamily: 'Menlo',
+                                                    ),
+                                                  ),
                                                   Text(
-                                                      'Hobby : ${TextAlertController.userData[index].hobby!.toString()}'),
+                                                    'Hobby : ${TextAlertController.userData[index].hobby!.toString()}',
+                                                    style: const TextStyle(
+                                                      fontFamily: 'Menlo',
+                                                    ),
+                                                  ),
                                                   Text(
-                                                      'Salary : ${TextAlertController.userData[index].salary!}'),
+                                                    'Salary : ${TextAlertController.userData[index].salary!}',
+                                                    style: const TextStyle(
+                                                      fontFamily: 'Menlo',
+                                                    ),
+                                                  ),
                                                 ],
                                               )
                                             ],
                                           ),
                                         ],
                                       ),
-                                    ),
-                                    const SizedBox(
-                                      height: 5,
-                                    ),
-                                    const Divider(
-                                      height: 2,
-                                      color: Colors.black,
-                                      thickness: 3,
                                     ),
                                     const SizedBox(
                                       height: 5,
