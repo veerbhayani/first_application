@@ -1,5 +1,4 @@
 {
     "editor.indentSize": "tabSize",
-    "editor.fontLigatures": true,
-    "editor.fontFamily": "'Menlo'"
+    "editor.fontLigatures": true
 }
