@@ -33,7 +33,6 @@ class _SingleTextFieldAlertDialogDemoState
               children: [
                 TextFormField(
                   style: const TextStyle(
-                    fontFamily: 'Menlo',
                     fontWeight: FontWeight.bold,
                   ),
                   controller: TextAlertController.txtNameEditingController,
@@ -48,7 +47,6 @@ class _SingleTextFieldAlertDialogDemoState
                 ),
                 TextFormField(
                   style: const TextStyle(
-                    fontFamily: 'Menlo',
                     fontWeight: FontWeight.bold,
                   ),
                   controller: TextAlertController.txtSurNameEditingController,
@@ -63,7 +61,6 @@ class _SingleTextFieldAlertDialogDemoState
                 ),
                 TextFormField(
                   style: const TextStyle(
-                    fontFamily: 'Menlo',
                     fontWeight: FontWeight.bold,
                   ),
                   controller: TextAlertController.txtUrlEditingController,
@@ -78,7 +75,6 @@ class _SingleTextFieldAlertDialogDemoState
                 ),
                 TextFormField(
                   style: const TextStyle(
-                    fontFamily: 'Menlo',
                     fontWeight: FontWeight.bold,
                   ),
                   controller: TextAlertController.txtAgeEditingController,
@@ -93,7 +89,6 @@ class _SingleTextFieldAlertDialogDemoState
                 ),
                 TextFormField(
                   style: const TextStyle(
-                    fontFamily: 'Menlo',
                     fontWeight: FontWeight.bold,
                   ),
                   controller: TextAlertController.txtMobileEditingController,
@@ -108,7 +103,6 @@ class _SingleTextFieldAlertDialogDemoState
                 ),
                 TextFormField(
                   style: const TextStyle(
-                    fontFamily: 'Menlo',
                     fontWeight: FontWeight.bold,
                   ),
                   controller: TextAlertController.txtEmailEditingController,
@@ -136,7 +130,6 @@ class _SingleTextFieldAlertDialogDemoState
                     const Text(
                       'Gender :  ',
                       style: TextStyle(
-                        fontFamily: 'Menlo',
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                       ),
@@ -144,7 +137,6 @@ class _SingleTextFieldAlertDialogDemoState
                     const Text(
                       'Male',
                       style: TextStyle(
-                        fontFamily: 'Menlo',
                         fontSize: 20,
                         fontWeight: FontWeight.normal,
                       ),
@@ -160,7 +152,6 @@ class _SingleTextFieldAlertDialogDemoState
                     const Text(
                       'Female ',
                       style: TextStyle(
-                        fontFamily: 'Menlo',
                         fontSize: 20,
                         fontWeight: FontWeight.normal,
                       ),
@@ -183,7 +174,6 @@ class _SingleTextFieldAlertDialogDemoState
                     const Text(
                       'Hobby : ',
                       style: TextStyle(
-                        fontFamily: 'Menlo',
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                       ),
@@ -191,7 +181,6 @@ class _SingleTextFieldAlertDialogDemoState
                     const Text(
                       'Cricket ',
                       style: TextStyle(
-                        fontFamily: 'Menlo',
                         fontSize: 20,
                         fontWeight: FontWeight.normal,
                       ),
@@ -206,7 +195,6 @@ class _SingleTextFieldAlertDialogDemoState
                     const Text(
                       'Singing ',
                       style: TextStyle(
-                        fontFamily: 'Menlo',
                         fontSize: 20,
                         fontWeight: FontWeight.normal,
                       ),
@@ -228,7 +216,6 @@ class _SingleTextFieldAlertDialogDemoState
                     const Text(
                       'Salary : ',
                       style: TextStyle(
-                        fontFamily: 'Menlo',
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                       ),
@@ -260,7 +247,6 @@ class _SingleTextFieldAlertDialogDemoState
                   child: const Text(
                     'Submit',
                     style: TextStyle(
-                      fontFamily: 'Menlo',
                       fontSize: 20,
                       color: Colors.white,
                       fontWeight: FontWeight.normal,
@@ -274,7 +260,6 @@ class _SingleTextFieldAlertDialogDemoState
                     ? const Text(
                         'There is not data',
                         style: TextStyle(
-                          fontFamily: 'Menlo',
                           fontSize: 20,
                           fontWeight: FontWeight.normal,
                         ),
@@ -305,7 +290,6 @@ class _SingleTextFieldAlertDialogDemoState
                                                 children: [
                                                   TextFormField(
                                                     style: const TextStyle(
-                                                      fontFamily: 'Menlo',
                                                       fontWeight:
                                                           FontWeight.normal,
                                                     ),
@@ -323,7 +307,6 @@ class _SingleTextFieldAlertDialogDemoState
                                                   ),
                                                   TextFormField(
                                                     style: const TextStyle(
-                                                      fontFamily: 'Menlo',
                                                       fontWeight:
                                                           FontWeight.normal,
                                                     ),
@@ -341,7 +324,6 @@ class _SingleTextFieldAlertDialogDemoState
                                                   ),
                                                   TextFormField(
                                                     style: const TextStyle(
-                                                      fontFamily: 'Menlo',
                                                       fontWeight:
                                                           FontWeight.normal,
                                                     ),
@@ -359,7 +341,6 @@ class _SingleTextFieldAlertDialogDemoState
                                                   ),
                                                   TextFormField(
                                                     style: const TextStyle(
-                                                      fontFamily: 'Menlo',
                                                       fontWeight:
                                                           FontWeight.normal,
                                                     ),
@@ -377,7 +358,6 @@ class _SingleTextFieldAlertDialogDemoState
                                                   ),
                                                   TextFormField(
                                                     style: const TextStyle(
-                                                      fontFamily: 'Menlo',
                                                       fontWeight:
                                                           FontWeight.normal,
                                                     ),
@@ -395,7 +375,6 @@ class _SingleTextFieldAlertDialogDemoState
                                                   ),
                                                   TextFormField(
                                                     style: const TextStyle(
-                                                      fontFamily: 'Menlo',
                                                       fontWeight:
                                                           FontWeight.normal,
                                                     ),
@@ -427,7 +406,6 @@ class _SingleTextFieldAlertDialogDemoState
                                                       const Text(
                                                         'Gender :  ',
                                                         style: TextStyle(
-                                                          fontFamily: 'Menlo',
                                                           fontWeight:
                                                               FontWeight.normal,
                                                         ),
@@ -435,7 +413,6 @@ class _SingleTextFieldAlertDialogDemoState
                                                       const Text(
                                                         'Male',
                                                         style: TextStyle(
-                                                          fontFamily: 'Menlo',
                                                           fontWeight:
                                                               FontWeight.normal,
                                                         ),
@@ -456,7 +433,6 @@ class _SingleTextFieldAlertDialogDemoState
                                                       const Text(
                                                         'Female',
                                                         style: TextStyle(
-                                                          fontFamily: 'Menlo',
                                                           fontWeight:
                                                               FontWeight.normal,
                                                         ),
@@ -484,7 +460,6 @@ class _SingleTextFieldAlertDialogDemoState
                                                       const Text(
                                                         'Hobby : ',
                                                         style: TextStyle(
-                                                          fontFamily: 'Menlo',
                                                           fontWeight:
                                                               FontWeight.normal,
                                                         ),
@@ -492,7 +467,6 @@ class _SingleTextFieldAlertDialogDemoState
                                                       const Text(
                                                         'Cricket ',
                                                         style: TextStyle(
-                                                          fontFamily: 'Menlo',
                                                           fontWeight:
                                                               FontWeight.normal,
                                                         ),
@@ -511,7 +485,6 @@ class _SingleTextFieldAlertDialogDemoState
                                                       const Text(
                                                         'Singing ',
                                                         style: TextStyle(
-                                                          fontFamily: 'Menlo',
                                                           fontWeight:
                                                               FontWeight.normal,
                                                         ),
@@ -537,7 +510,6 @@ class _SingleTextFieldAlertDialogDemoState
                                                       const Text(
                                                         'Salary : ',
                                                         style: TextStyle(
-                                                          fontFamily: 'Menlo',
                                                           fontWeight:
                                                               FontWeight.normal,
                                                         ),
@@ -588,7 +560,6 @@ class _SingleTextFieldAlertDialogDemoState
                                                         child: const Text(
                                                           'Update',
                                                           style: TextStyle(
-                                                            fontFamily: 'Menlo',
                                                             fontWeight:
                                                                 FontWeight
                                                                     .normal,
@@ -606,7 +577,6 @@ class _SingleTextFieldAlertDialogDemoState
                                                         child: const Text(
                                                           'Cancle',
                                                           style: TextStyle(
-                                                            fontFamily: 'Menlo',
                                                             fontWeight:
                                                                 FontWeight
                                                                     .normal,
@@ -636,7 +606,6 @@ class _SingleTextFieldAlertDialogDemoState
                                         title: const Text(
                                           'Are You Sure ?',
                                           style: TextStyle(
-                                            fontFamily: 'Menlo',
                                             fontWeight: FontWeight.normal,
                                           ),
                                         ),
@@ -653,7 +622,6 @@ class _SingleTextFieldAlertDialogDemoState
                                             child: const Text(
                                               'Delete',
                                               style: TextStyle(
-                                                fontFamily: 'Menlo',
                                                 fontWeight: FontWeight.normal,
                                               ),
                                             ),
@@ -668,7 +636,6 @@ class _SingleTextFieldAlertDialogDemoState
                                             child: const Text(
                                               'Cancle',
                                               style: TextStyle(
-                                                fontFamily: 'Menlo',
                                                 fontWeight: FontWeight.normal,
                                               ),
                                             ),
@@ -720,51 +687,35 @@ class _SingleTextFieldAlertDialogDemoState
                                                 children: [
                                                   Text(
                                                     'Name : ${TextAlertController.userData[index].name!}',
-                                                    style: const TextStyle(
-                                                      fontFamily: 'Menlo',
-                                                    ),
+                                                    style: const TextStyle(),
                                                   ),
                                                   Text(
                                                     'SurName : ${TextAlertController.userData[index].surName!}',
-                                                    style: const TextStyle(
-                                                      fontFamily: 'Menlo',
-                                                    ),
+                                                    style: const TextStyle(),
                                                   ),
                                                   Text(
                                                     'Age : ${TextAlertController.userData[index].age!.toString()}',
-                                                    style: const TextStyle(
-                                                      fontFamily: 'Menlo',
-                                                    ),
+                                                    style: const TextStyle(),
                                                   ),
                                                   Text(
                                                     'Mobile Number : ${TextAlertController.userData[index].mobileNumber!.toString()}',
-                                                    style: const TextStyle(
-                                                      fontFamily: 'Menlo',
-                                                    ),
+                                                    style: const TextStyle(),
                                                   ),
                                                   Text(
                                                     'EmailId : ${TextAlertController.userData[index].emailId!}',
-                                                    style: const TextStyle(
-                                                      fontFamily: 'Menlo',
-                                                    ),
+                                                    style: const TextStyle(),
                                                   ),
                                                   Text(
                                                     'Gender : ${TextAlertController.userData[index].gender!}',
-                                                    style: const TextStyle(
-                                                      fontFamily: 'Menlo',
-                                                    ),
+                                                    style: const TextStyle(),
                                                   ),
                                                   Text(
                                                     'Hobby : ${TextAlertController.userData[index].hobby!.toString()}',
-                                                    style: const TextStyle(
-                                                      fontFamily: 'Menlo',
-                                                    ),
+                                                    style: const TextStyle(),
                                                   ),
                                                   Text(
                                                     'Salary : ${TextAlertController.userData[index].salary!}',
-                                                    style: const TextStyle(
-                                                      fontFamily: 'Menlo',
-                                                    ),
+                                                    style: const TextStyle(),
                                                   ),
                                                 ],
                                               )
